@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Vishal Kumar Sah | Intelligent Digital Experiences</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@400&amp;family=Sora:wght@600;800&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Tailwind Theme Config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#051424",
+            "on-surface": "#d4e4fa",
+            "primary-fixed": "#dbe1ff",
+            "tertiary-fixed-dim": "#4cd7f6",
+            "primary-fixed-dim": "#b4c5ff",
+            "secondary": "#ddb7ff",
+            "surface": "#051424",
+            "primary-container": "#0062ff",
+            "surface-bright": "#2c3a4c",
+            "primary": "#b4c5ff",
+            "on-error": "#690005",
+            "surface-variant": "#273647",
+            "surface-container-low": "#0d1c2d",
+            "background": "#051424",
+            "on-primary": "#002a78",
+            "tertiary": "#4cd7f6",
+            "surface-tint": "#b4c5ff",
+            "on-secondary": "#490080",
+            "on-tertiary-fixed-variant": "#004e5c",
+            "on-background": "#d4e4fa",
+            "surface-container-high": "#1c2b3c",
+            "on-tertiary-container": "#e0f8ff",
+            "tertiary-container": "#007a8f",
+            "inverse-surface": "#d4e4fa",
+            "on-secondary-fixed-variant": "#6900b3",
+            "secondary-container": "#6f00be",
+            "on-tertiary": "#003640",
+            "outline": "#8c90a2",
+            "on-primary-fixed": "#00174b",
+            "surface-container-lowest": "#010f1f",
+            "secondary-fixed-dim": "#ddb7ff",
+            "on-secondary-fixed": "#2c0051",
+            "inverse-primary": "#0053da",
+            "inverse-on-surface": "#233143",
+            "error": "#ffb4ab",
+            "on-secondary-container": "#d6a9ff",
+            "on-primary-container": "#f3f3ff",
+            "on-primary-fixed-variant": "#003ea8",
+            "error-container": "#93000a",
+            "on-error-container": "#ffdad6",
+            "secondary-fixed": "#f0dbff",
+            "outline-variant": "#424656",
+            "surface-container-highest": "#273647",
+            "on-tertiary-fixed": "#001f26",
+            "tertiary-fixed": "#acedff",
+            "surface-container": "#122131",
+            "on-surface-variant": "#c2c6d9"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "stack-lg": "48px",
+            "base": "8px",
+            "margin-mobile": "20px",
+            "container-max": "1280px",
+            "gutter": "24px",
+            "stack-md": "24px",
+            "stack-sm": "12px"
+          },
+          "fontFamily": {
+            "headline-md": ["Sora"],
+            "display-lg": ["Sora"],
+            "headline-sm": ["Sora"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Sora"],
+            "label-mono": ["JetBrains Mono"]
+          },
+          "fontSize": {
+            "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+            "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "label-mono": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* Floating animations for tech labels */
+    @keyframes float-1 {
+
+      0%,
+      100% {
+        transform: translateY(0px) translateX(0px);
+      }
+
+      50% {
+        transform: translateY(-15px) translateX(10px);
+      }
+    }
+
+    @keyframes float-2 {
+
+      0%,
+      100% {
+        transform: translateY(0px) translateX(0px);
+      }
+
+      50% {
+        transform: translateY(15px) translateX(-10px);
+      }
+    }
+
+    @keyframes float-3 {
+
+      0%,
+      100% {
+        transform: translateY(0px) translateX(0px);
+      }
+
+      50% {
+        transform: translateY(-10px) translateX(-15px);
+      }
+    }
+
+    @keyframes float-4 {
+
+      0%,
+      100% {
+        transform: translateY(0px) translateX(0px);
+      }
+
+      50% {
+        transform: translateY(10px) translateX(15px);
+      }
+    }
+
+    .anim-float-1 {
+      animation: float-1 6s ease-in-out infinite;
+    }
+
+    .anim-float-2 {
+      animation: float-2 7s ease-in-out infinite;
+    }
+
+    .anim-float-3 {
+      animation: float-3 5.5s ease-in-out infinite;
+    }
+
+    .anim-float-4 {
+      animation: float-4 6.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background text-on-background min-h-screen flex flex-col relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+  <!-- Global Background Shader -->
+  <!-- STITCH_SHADER_START:ANIMATION_3 class="fixed inset-0 w-full h-full z-0 opacity-40 pointer-events-none mix-blend-screen" -->
+  <div class="fixed inset-0 w-full h-full z-0 opacity-40 pointer-events-none mix-blend-screen" style="display:block;">
+    <canvas id="shader-canvas-ANIMATION_3" style="display:block;width:100%;height:100%"></canvas>
+    <script>
+        (function () {
+          const canvas = document.getElementById('shader-canvas-ANIMATION_3');
+
+          // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+          // This fires on initial layout and whenever the element is resized.
+          function syncSize() {
+            const w = canvas.clientWidth || 1280;
+            const h = canvas.clientHeight || 720;
+            if (canvas.width !== w || canvas.height !== h) {
+              canvas.width = w;
+              canvas.height = h;
+            }
+          }
+          if (typeof ResizeObserver !== 'undefined') {
+            new ResizeObserver(syncSize).observe(canvas);
+          }
+          syncSize();
+
+          const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+          if (!gl) return;
+          const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+          const fs = `precision highp float;
+varying vec2 v_texCoord;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+float noise(vec2 p) {
+    return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453);
+}
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec3 color1 = vec3(0.039, 0.384, 1.0); // Electric Blue
+    vec3 color2 = vec3(0.659, 0.333, 0.969); // Neon Purple
+    vec3 color3 = vec3(0.023, 0.713, 0.831); // Cyan
+    
+    float n = noise(uv + u_time * 0.05);
+    vec3 bg = vec3(0.04, 0.04, 0.06); // Deep Dark
+    
+    float glow = 0.5 + 0.5 * sin(u_time * 0.2 + uv.x * 10.0 + uv.y * 5.0);
+    vec3 finalColor = mix(bg, color1, glow * 0.1);
+    finalColor = mix(finalColor, color2, (1.0 - uv.y) * 0.15 * (1.0 + sin(u_time * 0.3)));
+    finalColor = mix(finalColor, color3, uv.x * 0.1 * (1.0 + cos(u_time * 0.4)));
+    
+    // Subtle scanline effect
+    float scanline = sin(uv.y * 800.0) * 0.02;
+    finalColor -= scanline;
+    
+    gl_FragColor = vec4(finalColor, 1.0);
+}`;
+          function cs(type, src) {
+            const s = gl.createShader(type);
+            gl.shaderSource(s, src);
+            gl.compileShader(s);
+            return s;
+          }
+          const prog = gl.createProgram();
+          gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+          gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+          gl.linkProgram(prog);
+          gl.useProgram(prog);
+          const buf = gl.createBuffer();
+          gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+          gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+          const pos = gl.getAttribLocation(prog, 'a_position');
+          gl.enableVertexAttribArray(pos);
+          gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+          const uTime = gl.getUniformLocation(prog, 'u_time');
+          const uRes = gl.getUniformLocation(prog, 'u_resolution');
+          const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+          // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+          // Shaders that need normalized coords should use: u_mouse / u_resolution.
+          let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+          window.addEventListener('mousemove', (event) => {
+            const rect = canvas.getBoundingClientRect();
+            if (rect.width && rect.height) {
+              const nx = (event.clientX - rect.left) / rect.width;
+              const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+              mouse.x = nx * canvas.width;
+              mouse.y = ny * canvas.height;
+            }
+          });
+
+          function render(t) {
+            if (typeof ResizeObserver === 'undefined') syncSize();
+            gl.viewport(0, 0, canvas.width, canvas.height);
+            if (uTime) gl.uniform1f(uTime, t * 0.001);
+            if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+            if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+            gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+            requestAnimationFrame(render);
+          }
+          render(0);
+        })();
+    </script>
+  </div>
+  <!-- STITCH_SHADER_END:ANIMATION_3 -->
+  <!-- TopNavBar -->
+  <nav
+    class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-stack-sm md:pt-stack-md px-margin-mobile pointer-events-none">
+    <div
+      class="bg-surface-container/80 backdrop-blur-2xl rounded-full px-stack-md py-base border border-white/15 shadow-[0_0_15px_rgba(0,98,255,0.1)] flex items-center justify-between w-full max-w-container-max mx-auto shadow-2xl shadow-surface-dim/50 pointer-events-auto">
+      <a class="font-display-lg-mobile text-display-lg-mobile md:text-[24px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary"
+        href="../home/index.html">Vishal Kumar Sah</a>
+      <div class="hidden md:flex items-center gap-stack-lg">
+        <div class="flex items-center gap-stack-md font-label-mono text-label-mono uppercase tracking-widest">
+          <!-- Home is Active -->
+          <a class="text-tertiary border-b border-tertiary pb-1 hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+            href="../home/index.html">Home</a>
+          <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+            href="../skills/index.html">Skills</a>
+          <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+            href="../projects/index.html">Projects</a>
+          <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+            href="../about/index.html">About</a>
+          <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+            href="../contact/index.html">Contact</a>
+        </div>
+        <a href="../contact/index.html"
+          class="font-label-mono text-label-mono uppercase tracking-widest text-primary border border-primary/50 px-stack-sm py-base rounded-full hover:bg-primary/10 transition-colors">
+          Connect
+        </a>
+      </div>
+      <button class="md:hidden text-primary">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+      </button>
+    </div>
+  </nav>
+  <!-- Main Content Canvas -->
+  <main
+    class="flex-grow relative z-10 flex flex-col items-center justify-center min-h-screen pt-[120px] pb-stack-lg px-margin-mobile">
+    <div
+      class="max-w-container-max w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-left relative z-10">
+      <!-- Left Column: Bio & Actions -->
+      <div class="lg:col-span-7 flex flex-col items-start text-left">
+        <!-- Availability Badge -->
+        <div
+          class="mb-stack-md inline-flex items-center gap-2 bg-surface-container-high/80 backdrop-blur-xl border border-tertiary/30 rounded-full px-stack-sm py-base font-label-mono text-label-mono text-tertiary shadow-[0_0_15px_rgba(76,215,246,0.15)]">
+          <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          SYSTEM ONLINE // AVAILABLE FOR MISSIONS
+        </div>
+        <!-- Hero Typography -->
+        <h1
+          class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-stack-sm tracking-tight leading-tight">
+          Hi, I’m <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-tertiary to-secondary">Vishal Kumar
+            Sah</span>
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+          I am from bihar and currenlt pursuing B.Tech in Computer Science with specialization in Artificial
+          Intelligence and Machine Learning at Galgotias
+          University. I am passionate about web development, data analysis and Machine Learning
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant/80 mb-stack-lg leading-relaxed">
+          With experience in Java, Python, JavaScript, C++, MySQL, MongoDB, and machine learning libraries, I enjoy
+          transforming ideas into practical projects. I am continuously improving my problem-solving skills, exploring
+          new technologies, and working toward a career in AI and machine learning where I can create meaningful,
+          real-world impact.
+        </p>
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-stack-sm mt-stack-sm relative z-30">
+          <a href="../projects/index.html"
+            class="bg-gradient-to-r from-primary to-secondary text-surface-container-lowest font-label-mono text-label-mono uppercase tracking-widest px-stack-md py-stack-sm rounded-full shadow-[0_0_20px_rgba(180,197,255,0.4)] hover:shadow-[0_0_30px_rgba(180,197,255,0.6)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
+            <span class="material-symbols-outlined" style="font-size: 18px;">explore</span>
+            Explore My Work
+          </a>
+          <a
+            href="../Assets/Resume.docx"
+            download="Resume.docx"
+            class="bg-surface-container/50 backdrop-blur-md border border-outline hover:border-primary text-on-surface font-label-mono text-label-mono uppercase tracking-widest px-stack-md py-stack-sm rounded-full hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
+            <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: 3D Core Stage -->
+      <div class="lg:col-span-5 flex justify-center relative">
+        <!-- 3D Core Stage & Orbiting Tech -->
+        <div
+          class="relative w-full max-w-[500px] h-[400px] md:h-[500px] flex items-center justify-center perspective-[1000px]">
+          <!-- Central AI Core Scene -->
+          <div
+            class="w-[280px] h-[280px] md:w-[360px] md:h-[360px] relative z-20 rounded-full overflow-hidden shadow-[0_0_60px_rgba(0,98,255,0.2)]">
+            <!-- STITCH_THREEJS_START:ANIMATION_4 class="absolute inset-0 w-full h-full pointer-events-auto" -->
+            <div class="absolute inset-0 w-full h-full pointer-events-none">
+              <img
+                src="../Assets/me.png"
+                alt="Portrait of Vishal Kumar Sah"
+                class="absolute inset-0 w-full h-full object-cover"
+                draggable="false" />
+            </div>
+            <!-- STITCH_THREEJS_END:ANIMATION_4 -->
+          </div>
+          <!-- Orbiting Skill Chips (Glassmorphism Pills) -->
+          <div class="absolute top-[10%] left-[5%] z-30 anim-float-1">
+            <span
+              class="bg-primary-container/10 backdrop-blur-md border border-primary-container text-primary font-label-mono text-label-mono rounded-full px-stack-sm py-base shadow-[0_0_15px_rgba(0,98,255,0.2)] inline-flex items-center gap-2">
+              <span class="material-symbols-outlined" style="font-size: 16px;">code</span>
+              Java
+            </span>
+          </div>
+          <div class="absolute top-[20%] right-[5%] z-30 anim-float-2">
+            <span
+              class="bg-secondary-container/10 backdrop-blur-md border border-secondary-container text-secondary font-label-mono text-label-mono rounded-full px-stack-sm py-base shadow-[0_0_15px_rgba(111,0,190,0.2)] inline-flex items-center gap-2">
+              <span class="material-symbols-outlined" style="font-size: 16px;">terminal</span>
+              Python
+            </span>
+          </div>
+          <div class="absolute bottom-[20%] left-[10%] z-30 anim-float-3">
+            <span
+              class="bg-tertiary-container/10 backdrop-blur-md border border-tertiary-container text-tertiary font-label-mono text-label-mono rounded-full px-stack-sm py-base shadow-[0_0_15px_rgba(0,122,143,0.2)] inline-flex items-center gap-2">
+              <span class="material-symbols-outlined" style="font-size: 16px;">memory</span>
+              ML
+            </span>
+          </div>
+          <div class="absolute bottom-[15%] right-[10%] z-30 anim-float-4">
+            <span
+              class="bg-primary-fixed-variant/10 backdrop-blur-md border border-primary-fixed-variant text-primary-fixed font-label-mono text-label-mono rounded-full px-stack-sm py-base shadow-[0_0_15px_rgba(0,62,168,0.2)] inline-flex items-center gap-2">
+              <span class="material-symbols-outlined" style="font-size: 16px;">webhook</span>
+              React
+            </span>
+          </div>
+          <!-- Atmospheric glow behind core -->
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-primary-container/20 to-transparent blur-[80px] -z-10 rounded-full">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll Indicator -->
+    <div
+      class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
+      <span class="font-label-mono text-[10px] uppercase tracking-widest text-on-surface-variant">Scroll to
+        Initialize</span>
+      <div class="w-[1px] h-[40px] bg-gradient-to-b from-primary to-transparent relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-[15px] bg-white shadow-[0_0_5px_white] animate-[bounce_2s_infinite]">
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="relative z-10 bg-surface-container-lowest w-full pt-stack-lg pb-stack-md px-margin-mobile border-t border-surface-variant">
+    <div class="w-full max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-stack-md">
+      <div class="font-headline-sm text-headline-sm text-on-surface">Vishal Kumar Sah</div>
+      <div class="flex items-center gap-stack-sm md:gap-stack-md font-label-mono text-label-mono">
+        <a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform"
+          href="#">Terminal</a>
+        <a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform"
+          href="#">Data_Privacy</a>
+        <a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform"
+          href="#">Source</a>
+      </div>
+      <div class="text-tertiary font-label-mono text-label-mono text-xs text-center md:text-right">
+        © 2024 VKS NEURAL LAB. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+- [x] Update Stitch download button to download `stitch_vks_digital_universe/Resume/Resume.docx` from `home/index.html`
+- [ ] Verify the updated link works (manually via browser)

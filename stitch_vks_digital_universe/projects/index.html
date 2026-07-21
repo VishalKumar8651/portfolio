@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Vishal Kumar Sah | Projects</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#051424",
+                        "on-surface": "#d4e4fa",
+                        "primary-fixed": "#dbe1ff",
+                        "tertiary-fixed-dim": "#4cd7f6",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "secondary": "#ddb7ff",
+                        "surface": "#051424",
+                        "primary-container": "#0062ff",
+                        "surface-bright": "#2c3a4c",
+                        "primary": "#b4c5ff",
+                        "on-error": "#690005",
+                        "surface-variant": "#273647",
+                        "surface-container-low": "#0d1c2d",
+                        "background": "#051424",
+                        "on-primary": "#002a78",
+                        "tertiary": "#4cd7f6",
+                        "surface-tint": "#b4c5ff",
+                        "on-secondary": "#490080",
+                        "on-tertiary-fixed-variant": "#004e5c",
+                        "on-background": "#d4e4fa",
+                        "surface-container-high": "#1c2b3c",
+                        "on-tertiary-container": "#e0f8ff",
+                        "tertiary-container": "#007a8f",
+                        "inverse-surface": "#d4e4fa",
+                        "on-secondary-fixed-variant": "#6900b3",
+                        "secondary-container": "#6f00be",
+                        "on-tertiary": "#003640",
+                        "outline": "#8c90a2",
+                        "on-primary-fixed": "#00174b",
+                        "surface-container-lowest": "#010f1f",
+                        "secondary-fixed-dim": "#ddb7ff",
+                        "on-secondary-fixed": "#2c0051",
+                        "inverse-primary": "#0053da",
+                        "inverse-on-surface": "#233143",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#d6a9ff",
+                        "on-primary-container": "#f3f3ff",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "error-container": "#93000a",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed": "#f0dbff",
+                        "outline-variant": "#424656",
+                        "surface-container-highest": "#273647",
+                        "on-tertiary-fixed": "#001f26",
+                        "tertiary-fixed": "#acedff",
+                        "surface-container": "#122131",
+                        "on-surface-variant": "#c2c6d9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "48px",
+                        "base": "8px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "stack-md": "24px",
+                        "stack-sm": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Sora"],
+                        "display-lg": ["Sora"],
+                        "headline-sm": ["Sora"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Sora"],
+                        "label-mono": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-mono": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@400&amp;family=Sora:wght@600;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            background-color: #051424;
+            color: #d4e4fa;
+            overflow-x: hidden;
+        }
+
+        .bg-z1 {
+            background-color: #0a0a0f;
+            background-image: radial-gradient(circle at 50% 50%, rgba(0, 98, 255, 0.05) 0%, transparent 100%);
+        }
+
+        .glass-card {
+            background: rgba(15, 15, 25, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)) 1;
+        }
+
+        .tilt-card {
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            transform-style: preserve-3d;
+        }
+
+        .tilt-card:hover {
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 98, 255, 0.2);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0062ff, #ddb7ff);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 20px rgba(0, 98, 255, 0.4);
+        }
+
+        .skill-chip {
+            background: rgba(0, 98, 255, 0.1);
+            border: 1px solid rgba(0, 98, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-z1 min-h-screen flex flex-col font-body-md text-body-md">
+    <!-- TopNavBar (Shared Component) -->
+    <nav
+        class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-stack-sm md:pt-stack-md px-margin-mobile pointer-events-none">
+        <div
+            class="bg-surface-container/80 backdrop-blur-2xl rounded-full px-stack-md py-base border border-white/15 shadow-[0_0_15px_rgba(0,98,255,0.1)] flex items-center justify-between w-full max-w-container-max mx-auto shadow-2xl shadow-surface-dim/50 pointer-events-auto">
+            <a href="../home/index.html"
+                class="font-display-lg-mobile text-display-lg-mobile md:text-[24px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">
+                Vishal Kumar Sah
+            </a>
+            <div class="hidden md:flex items-center gap-stack-lg">
+                <div class="flex items-center gap-stack-md font-label-mono text-label-mono uppercase tracking-widest">
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../home/index.html">Home</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../skills/index.html">Skills</a>
+                    <!-- Projects is Active -->
+                    <a class="text-tertiary border-b border-tertiary pb-1 hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../projects/index.html">Projects</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../about/index.html">About</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../contact/index.html">Contact</a>
+                </div>
+                <a href="../contact/index.html"
+                    class="font-label-mono text-label-mono uppercase tracking-widest text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary/10 transition-colors">
+                    Connect
+                </a>
+            </div>
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Main Content Canvas -->
+    <main
+        class="flex-grow pt-32 pb-stack-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full relative z-10">
+        <!-- Header -->
+        <header class="mb-stack-lg text-center md:text-left">
+            <h1
+                class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-stack-sm drop-shadow-2xl">
+                PROJECT_LAB
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Exploring the intersection of artificial intelligence, scalable architectures, and immersive digital
+                experiences. A collection of selected experiments and deployed solutions.
+            </p>
+        </header>
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 gap-stack-lg">
+            <!-- Project 1: AI-Powered Assessment Platform -->
+            <article class="glass-card tilt-card rounded-xl overflow-hidden flex flex-col md:flex-row relative group">
+                <div class="md:w-1/2 h-64 md:h-auto relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="A futuristic digital interface showing abstract data visualizations, glowing nodes connected by lines in a dark cyberspace environment. Cinematic lighting with deep blues and bright cyan accents, evoking advanced AI processing. High-end sci-fi aesthetic, sharp focus, 8k resolution."
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNpxv3W2-R9UJdY2tgGcyxsN-hKvP5F8x4Ul4vIdoNFNxenqW0EBTNLmkqHC28cMhnTzqnffbH0Z74ZFmPifUWpovFgIcWtPYKdDgWR-RiX5IRGGdJcNLe-zkpKhL-SgOHFHPgRG1Xyih8oxj1Ym0OzdRnC6-Yn6V5_0cmvnPg8dcs4uMm6_XTotlIGU81fYELW2YYeDV-V0VGjAlJSDcS1551G8wsAvkm7Oa5JXkjTUa5yxoneZI4')">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-surface-dim/90 to-transparent">
+                    </div>
+                </div>
+                <div class="p-stack-md md:p-stack-lg flex flex-col justify-center md:w-1/2 z-10">
+                    <h2
+                        class="font-headline-md text-headline-md text-on-surface mb-base group-hover:text-tertiary transition-colors">
+                        AI-Powered Assessment Platform</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        A robust, intelligent platform designed to automate and enhance technical evaluations. Utilizing
+                        large language models to generate dynamic problem sets and provide real-time, context-aware code
+                        analysis.
+                    </p>
+                    <div class="flex flex-wrap gap-base mb-stack-md">
+                        <span
+                            class="skill-chip rounded-full px-3 py-1 font-label-mono text-label-mono text-tertiary">React</span>
+                        <span
+                            class="skill-chip rounded-full px-3 py-1 font-label-mono text-label-mono text-tertiary">Node.js</span>
+                        <span
+                            class="skill-chip rounded-full px-3 py-1 font-label-mono text-label-mono text-tertiary">Gemini
+                            API</span>
+                    </div>
+                    <button
+                        class="btn-primary rounded-lg px-6 py-3 font-label-mono text-label-mono uppercase tracking-widest text-white self-start flex items-center gap-2">
+                        <span>View Case Study</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+            </article>
+            <!-- Project 2: Full-Stack E-Commerce Platform -->
+            <article
+                class="glass-card tilt-card rounded-xl overflow-hidden flex flex-col md:flex-row-reverse relative group">
+                <div class="md:w-1/2 h-64 md:h-auto relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="A sleek, modern holographic dashboard displaying e-commerce analytics, floating shopping carts, and geometric financial charts. Dark mode background with vibrant magenta and purple neon accents, glassmorphism UI elements, cinematic depth of field, high-end digital design."
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjmKSw08p1Qs0chDggvNItZU0gmQ-AdAyCyRhEsqlqSY80atxxaL6q3rwOz2DRN4BMGiCwJSah9MWQLVnSUea7MInOlgX8fV2J-0ThCrbiQH0jcFbg9hRqd97CMwK5FKCEUmKzwdNntkr8N1vEe-SXW8MzE9tiHDt_au23BEylzwlckli2Q_fZenKbzKc1Ccgbftl60EGtzcA5V54alSZkwTDL2F0953NltgPN-bpsekaQUDbK9il0')">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-dim/90 to-transparent">
+                    </div>
+                </div>
+                <div class="p-stack-md md:p-stack-lg flex flex-col justify-center md:w-1/2 z-10">
+                    <h2
+                        class="font-headline-md text-headline-md text-on-surface mb-base group-hover:text-secondary transition-colors">
+                        Full-Stack E-Commerce Platform</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        A highly scalable digital storefront architecture. Engineered for high-throughput transactions
+                        featuring secure OAuth authentication, complex inventory management, and a seamless,
+                        high-performance user interface.
+                    </p>
+                    <div class="flex flex-wrap gap-base mb-stack-md">
+                        <span
+                            class="skill-chip rounded-full px-3 py-1 font-label-mono text-label-mono text-secondary">React</span>
+                        <span
+                            class="skill-chip rounded-full px-3 py-1 font-label-mono text-label-mono text-secondary">MongoDB</span>
+                        <span
+                            class="skill-chip rounded-full px-3 py-1 font-label-mono text-label-mono text-secondary">OAuth</span>
+                    </div>
+                    <button
+                        class="btn-primary rounded-lg px-6 py-3 font-label-mono text-label-mono uppercase tracking-widest text-white self-start flex items-center gap-2">
+                        <span>Explore Architecture</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+            </article>
+            <!-- Project 3: Machine Learning Exploration -->
+            <article class="glass-card tilt-card rounded-xl overflow-hidden flex flex-col md:flex-row relative group">
+                <div class="md:w-1/2 h-64 md:h-auto relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Abstract visualization of machine learning algorithms, showing glowing neural network layers, scattered data points forming clusters in a 3D space. Dark atmospheric environment with glowing cyan and soft violet lights. High tech, scientific, futuristic aesthetic."
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOj1OPANWUbnYSSFMjTWMYUBTn4usgn-QoMrwZwmYK-XTVSCAafKBwc8KETeIwtq4vlVgSah4SlRSO1f_dSYU7n-Uj_s9i0SrFxGKHzpGDpq-6yKqMyyjh03mFaiZKLzWvPkLzqlWA9q0IWJ96l-CCC67CVTii5UBmdYe-NI-LUS9R72VtkTF9H6R-k5-A4FHNzK1VMOBmMy5hEfDNVITTkrvYaMzfw3XBJfxfcGPM0x35oWet1W37')">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-surface-dim/90 to-transparent">
+                    </div>
+                </div>
+                <div class="p-stack-md md:p-stack-lg flex flex-col justify-center md:w-1/2 z-10">
+                    <h2
+                        class="font-headline-md text-headline-md text-on-surface mb-base group-hover:text-primary transition-colors">
+                        Machine Learning Exploration</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        A series of exploratory notebooks and models focusing on predictive analytics and pattern
+                        recognition. Implementing classical machine learning algorithms to derive actionable insights
+                        from unstructured datasets.
+                    </p>
+                    <div class="flex flex-wrap gap-base mb-stack-md">
+                        <span
+                            class="skill-chip rounded-full px-3 py-1 font-label-mono text-label-mono text-primary">Python</span>
+                        <span
+                            class="skill-chip rounded-full px-3 py-1 font-label-mono text-label-mono text-primary">Scikit-learn</span>
+                        <span
+                            class="skill-chip rounded-full px-3 py-1 font-label-mono text-label-mono text-primary">Jupyter</span>
+                    </div>
+                    <button
+                        class="btn-primary rounded-lg px-6 py-3 font-label-mono text-label-mono uppercase tracking-widest text-white self-start flex items-center gap-2">
+                        <span>View Notebooks</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+            </article>
+        </div>
+    </main>
+    <!-- Footer (Shared Component) -->
+    <footer
+        class="bg-surface-container-lowest w-full pt-stack-lg pb-stack-md px-margin-mobile border-t border-surface-variant">
+        <div
+            class="w-full max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-stack-md">
+            <div class="font-headline-sm text-headline-sm text-on-surface">
+                Vishal Kumar Sah
+            </div>
+            <ul class="flex gap-stack-md font-label-mono text-label-mono text-on-surface-variant">
+                <li><a class="hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 inline-block"
+                        href="#">Terminal</a></li>
+                <li><a class="hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 inline-block"
+                        href="#">Data_Privacy</a></li>
+                <li><a class="hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 inline-block"
+                        href="#">Source</a></li>
+            </ul>
+            <div class="font-label-mono text-label-mono text-tertiary">
+                © 2024 VKS NEURAL LAB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Simple tilt effect for cards
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = ((y - centerY) / centerY) * -5;
+                const rotateY = ((x - centerX) / centerX) * 5;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Me | Vishal Kumar Sah</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;700&family=Sora:wght@600;800;900&display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Theme Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#051424",
+                        "on-surface": "#d4e4fa",
+                        "primary-fixed": "#dbe1ff",
+                        "tertiary-fixed-dim": "#4cd7f6",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "secondary": "#ddb7ff",
+                        "surface": "#051424",
+                        "primary-container": "#0062ff",
+                        "surface-bright": "#2c3a4c",
+                        "primary": "#b4c5ff",
+                        "on-error": "#690005",
+                        "surface-variant": "#273647",
+                        "surface-container-low": "#0d1c2d",
+                        "background": "#051424",
+                        "on-primary": "#002a78",
+                        "tertiary": "#4cd7f6",
+                        "surface-tint": "#b4c5ff",
+                        "on-secondary": "#490080",
+                        "on-tertiary-fixed-variant": "#004e5c",
+                        "on-background": "#d4e4fa",
+                        "surface-container-high": "#1c2b3c",
+                        "on-tertiary-container": "#e0f8ff",
+                        "tertiary-container": "#007a8f",
+                        "inverse-surface": "#d4e4fa",
+                        "on-secondary-fixed-variant": "#6900b3",
+                        "secondary-container": "#6f00be",
+                        "on-tertiary": "#003640",
+                        "outline": "#8c90a2",
+                        "on-primary-fixed": "#00174b",
+                        "surface-container-lowest": "#010f1f",
+                        "secondary-fixed-dim": "#ddb7ff",
+                        "on-secondary-fixed": "#2c0051",
+                        "inverse-primary": "#0053da",
+                        "inverse-on-surface": "#233143",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#d6a9ff",
+                        "on-primary-container": "#f3f3ff",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "error-container": "#93000a",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed": "#f0dbff",
+                        "outline-variant": "#424656",
+                        "surface-container-highest": "#273647",
+                        "on-tertiary-fixed": "#001f26",
+                        "tertiary-fixed": "#acedff",
+                        "surface-container": "#122131",
+                        "on-surface-variant": "#c2c6d9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "48px",
+                        "base": "8px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "stack-md": "24px",
+                        "stack-sm": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Sora"],
+                        "display-lg": ["Sora"],
+                        "headline-sm": ["Sora"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Sora"],
+                        "label-mono": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-mono": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* ──────────────── About heading ──────────────── */
+        .about-heading {
+            font-family: 'Sora', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1;
+            letter-spacing: -0.03em;
+            font-size: clamp(3rem, 8vw, 6.5rem);
+            /* Gradient text matching the portfolio theme */
+            background: linear-gradient(135deg, #b4c5ff 0%, #4cd7f6 50%, #ddb7ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ──────────────── Contact Button ──────────────── */
+        .contact-btn {
+            background: linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%);
+            box-shadow: 0px 4px 4px rgba(181, 1, 167, 0.25), 4px 4px 12px #7721B1 inset;
+            outline: 2px solid rgba(255, 255, 255, 0.7);
+            outline-offset: -3px;
+            border: none;
+            border-radius: 9999px;
+            color: white;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            cursor: pointer;
+            padding: 14px 40px;
+            font-size: clamp(0.75rem, 1.2vw, 1rem);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.85;
+            transform: translateY(-2px);
+        }
+
+        /* ──────────────── Decorative corner images ──────────────── */
+        .corner-deco {
+            position: absolute;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        /* ──────────────── Stats card ──────────────── */
+        .stat-card {
+            background: rgba(18, 33, 49, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(76, 215, 246, 0.2);
+            border-radius: 16px;
+            padding: 20px 28px;
+            text-align: center;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(76, 215, 246, 0.5);
+            box-shadow: 0 0 20px rgba(76, 215, 246, 0.15);
+        }
+
+        /* ──────────────── Tag pill ──────────────── */
+        .tag-pill {
+            background: rgba(180, 197, 255, 0.08);
+            border: 1px solid rgba(180, 197, 255, 0.25);
+            border-radius: 9999px;
+            padding: 6px 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: #b4c5ff;
+            letter-spacing: 0.04em;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .tag-pill:hover {
+            background: rgba(180, 197, 255, 0.15);
+            border-color: rgba(180, 197, 255, 0.5);
+        }
+
+        /* ──────────────── Floating animation for decorations ──────────────── */
+        @keyframes float-tl {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(-3deg);
+            }
+
+            50% {
+                transform: translateY(-18px) rotate(-1deg);
+            }
+        }
+
+        @keyframes float-tr {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(3deg);
+            }
+
+            50% {
+                transform: translateY(-14px) rotate(5deg);
+            }
+        }
+
+        @keyframes float-bl {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(2deg);
+            }
+
+            50% {
+                transform: translateY(16px) rotate(-1deg);
+            }
+        }
+
+        @keyframes float-br {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(-2deg);
+            }
+
+            50% {
+                transform: translateY(12px) rotate(1deg);
+            }
+        }
+
+        .float-tl {
+            animation: float-tl 7s ease-in-out infinite;
+        }
+
+        .float-tr {
+            animation: float-tr 6s ease-in-out infinite;
+        }
+
+        .float-bl {
+            animation: float-bl 8s ease-in-out infinite;
+        }
+
+        .float-br {
+            animation: float-br 5.5s ease-in-out infinite;
+        }
+
+        /* ──────────────── Section fade-in ──────────────── */
+        .fade-section {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .fade-section.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ──────────────── Divider line ──────────────── */
+        .gradient-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4), rgba(4, 5, 7, 0.4), transparent);
+        }
+
+        /* ──────────────── Character reveal style ──────────────── */
+        .about-char {
+            display: inline;
+            white-space: normal;
+            transition: opacity 0.1s ease;
+        }
+
+        /* Force strict centering for the hero paragraph */
+        #animated-about-text {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: center !important;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-background min-h-screen flex flex-col relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container"
+    style="background-color:#000 !important;">
+
+    <!-- Global Background Shader -->
+    <div class="fixed inset-0 w-full h-full z-0 opacity-15 pointer-events-none mix-blend-screen" style="display:block;">
+        <canvas id="shader-canvas" style="display:block;width:100%;height:100%"></canvas>
+        <script>
+                (function () {
+                    const canvas = document.getElementById('shader-canvas');
+                    function syncSize() {
+                        const w = canvas.clientWidth || 1280;
+                        const h = canvas.clientHeight || 720;
+                        if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; }
+                    }
+                    if (typeof ResizeObserver !== 'undefined') new ResizeObserver(syncSize).observe(canvas);
+                    syncSize();
+                    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+                    if (!gl) return;
+                    const vs = `attribute vec2 a_position; varying vec2 v_texCoord;
+void main() { v_texCoord = a_position * 0.5 + 0.5; gl_Position = vec4(a_position, 0.0, 1.0); }`;
+                    const fs = `precision highp float; varying vec2 v_texCoord; uniform float u_time; uniform vec2 u_resolution;
+float noise(vec2 p) { return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453); }
+void main() {
+  vec2 uv = v_texCoord;
+  vec3 color1 = vec3(0.039, 0.384, 1.0);
+  vec3 color2 = vec3(0.659, 0.333, 0.969);
+  vec3 color3 = vec3(0.023, 0.713, 0.831);
+  float n = noise(uv + u_time * 0.05);
+  vec3 bg = vec3(0.04, 0.04, 0.06);
+  float glow = 0.5 + 0.5 * sin(u_time * 0.2 + uv.x * 10.0 + uv.y * 5.0);
+  vec3 finalColor = mix(bg, color1, glow * 0.1);
+  finalColor = mix(finalColor, color2, (1.0 - uv.y) * 0.15 * (1.0 + sin(u_time * 0.3)));
+  finalColor = mix(finalColor, color3, uv.x * 0.1 * (1.0 + cos(u_time * 0.4)));
+  float scanline = sin(uv.y * 800.0) * 0.02;
+  finalColor -= scanline;
+  gl_FragColor = vec4(finalColor, 1.0);
+}`;
+                    function cs(type, src) { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return s; }
+                    const prog = gl.createProgram();
+                    gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+                    gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+                    gl.linkProgram(prog); gl.useProgram(prog);
+                    const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+                    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+                    const pos = gl.getAttribLocation(prog, 'a_position');
+                    gl.enableVertexAttribArray(pos); gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+                    const uTime = gl.getUniformLocation(prog, 'u_time');
+                    const uRes = gl.getUniformLocation(prog, 'u_resolution');
+                    function render(t) {
+                        if (typeof ResizeObserver === 'undefined') syncSize();
+                        gl.viewport(0, 0, canvas.width, canvas.height);
+                        if (uTime) gl.uniform1f(uTime, t * 0.001);
+                        if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+                        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+                        requestAnimationFrame(render);
+                    }
+                    render(0);
+                })();
+        </script>
+    </div>
+
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-stack-sm md:pt-stack-md px-margin-mobile pointer-events-none">
+        <div
+            class="bg-surface-container/80 backdrop-blur-2xl rounded-full px-stack-md py-base border border-white/15 shadow-[0_0_15px_rgba(0,98,255,0.1)] flex items-center justify-between w-full max-w-container-max mx-auto shadow-2xl shadow-surface-dim/50 pointer-events-auto">
+            <a class="font-display-lg-mobile text-display-lg-mobile md:text-[24px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary"
+                href="../home/index.html">Vishal Kumar Sah</a>
+            <div class="hidden md:flex items-center gap-stack-lg">
+                <div class="flex items-center gap-stack-md font-label-mono text-label-mono uppercase tracking-widest">
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../home/index.html">Home</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../skills/index.html">Skills</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../projects/index.html">Projects</a>
+                    <!-- About is Active -->
+                    <a class="text-tertiary border-b border-tertiary pb-1 hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../about/index.html">About</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
+                        href="../contact/index.html">Contact</a>
+                </div>
+                <a href="../contact/index.html"
+                    class="font-label-mono text-label-mono uppercase tracking-widest text-primary border border-primary/50 px-stack-sm py-base rounded-full hover:bg-primary/10 transition-colors">
+                    Connect
+                </a>
+            </div>
+            <button class="md:hidden text-primary" onclick="toggleMobileMenu()">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-40 bg-surface-container-lowest/95 backdrop-blur-xl flex-col items-center justify-center gap-8 hidden">
+        <button onclick="toggleMobileMenu()" class="absolute top-6 right-6 text-primary">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div
+            class="flex flex-col items-center gap-8 font-label-mono text-label-mono uppercase tracking-widest text-2xl">
+            <a href="../home/index.html" class="text-on-surface hover:text-primary transition-colors">Home</a>
+            <a href="../skills/index.html" class="text-on-surface hover:text-primary transition-colors">Skills</a>
+            <a href="../projects/index.html" class="text-on-surface hover:text-primary transition-colors">Projects</a>
+            <a href="../about/index.html" class="text-tertiary">About</a>
+            <a href="../contact/index.html" class="text-on-surface hover:text-primary transition-colors">Contact</a>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  MAIN CONTENT                                      -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <main class="flex-grow relative z-10">
+
+        <!-- ── SECTION 1: Hero "About Me" ── -->
+        <section
+            id="about-hero"
+            class="relative min-h-screen flex flex-col items-center justify-center overflow-visible pt-28 sm:pt-32 md:pt-40 pb-24"
+            style="background-color:#000 !important; background: #000 !important;"
+        >
+
+            <!-- ═══ Corner Decorative Elements ═══ -->
+
+            <!-- Top-left: Moon -->
+            <div class="corner-deco float-tl" style="top: 5%; left: clamp(1%, 4%, 4%);">
+
+            </div>
+
+            <!-- Bottom-left: 3D object -->
+            <div class="corner-deco float-bl" style="bottom: 8%; left: clamp(3%, 8%, 8%);">
+
+            </div>
+
+            <!-- Top-right: Lego -->
+            <div class="corner-deco float-tr" style="top: 5%; right: clamp(1%, 4%, 4%);">
+
+            </div>
+
+            <!-- Bottom-right: 3D group -->
+            <div class="corner-deco float-br" style="bottom: 8%; right: clamp(3%, 8%, 8%);">
+
+            </div>
+
+            <!-- Center content -->
+            <div class="relative z-10 flex flex-col items-center text-center gap-10 sm:gap-14 md:gap-16 px-margin-mobile">
+                <!-- Giant Heading -->
+                <h1 class="about-heading fade-section" id="about-heading">About me</h1>
+
+                <!-- Scroll-animated intro text + button -->
+                <div class="flex flex-col items-center gap-14 sm:gap-18 md:gap-24">
+                    <p
+                        id="animated-about-text"
+                        class="w-full max-w-5xl mx-auto px-5 sm:px-8 text-center text-white font-semibold leading-relaxed fade-section"
+                        style="
+                            font-family: 'Poppins', sans-serif;
+                            font-size: clamp(1rem, 1.7vw, 1.35rem);
+                            word-break: normal;
+                            overflow-wrap: normal;
+                            white-space: normal;
+                            hyphens: none;
+                        "
+                    >
+                        <!-- Characters injected by JS -->
+                    </p>
+
+                    <div class="fade-section">
+                        <a href="../contact/index.html" class="contact-btn">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atmospheric radial glow -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
+                style="background: radial-gradient(circle, rgba(0,98,255,0.07) 0%, rgba(76,215,246,0.04) 50%, transparent 100%); filter: blur(60px);">
+            </div>
+        </section>
+
+        <!-- ── Divider ── -->
+        <div class="gradient-divider mx-auto max-w-container-max w-full px-margin-mobile relative z-10"></div>
+
+        <!-- ── SECTION 2: Who I Am (Bio Cards) ── -->
+        <section class="relative z-10 py-20 px-margin-mobile">
+            <div class="max-w-container-max mx-auto">
+
+                <!-- Section Label -->
+                <div class="fade-section mb-12 flex items-center gap-4">
+                    <span class="w-8 h-[2px] bg-tertiary inline-block"></span>
+                    <span class="font-label-mono text-label-mono text-tertiary uppercase tracking-widest">Who I
+                        Am</span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+                    <!-- Left: Long bio -->
+                    <div class="fade-section">
+                        <h2 class="font-headline-md text-headline-md text-on-surface mb-6">
+                            A curious mind building at the<br />
+                            intersection of <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">AI &
+                                Web</span>
+                        </h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant mb-4 leading-relaxed">
+                            I'm from Bihar and currently pursuing a B.Tech in Computer Science with a specialisation in
+                            <strong class="text-primary">Artificial Intelligence and Machine Learning</strong> at
+                            Galgotias University.
+                        </p>
+                        <p class="font-body-md text-body-md text-on-surface-variant/80 leading-relaxed mb-6">
+                            With hands-on experience in Java, Python, JavaScript, C++, MySQL, MongoDB, and machine
+                            learning libraries,
+                            I enjoy transforming raw ideas into practical, real-world projects. I'm continuously
+                            sharpening my
+                            problem-solving skills and exploring new technologies to create meaningful impact.
+                        </p>
+                        <p class="font-body-md text-body-md text-on-surface-variant/70 leading-relaxed">
+                            When I'm not coding, you'll find me diving into research papers on generative AI,
+                            experimenting with
+                            data visualisation, or contributing to open-source repositories.
+                        </p>
+                    </div>
+
+                    <!-- Right: Stats + Tags -->
+                    <div class="flex flex-col gap-8">
+
+                        <!-- Stats row -->
+                        <div class="fade-section grid grid-cols-3 gap-4">
+                            <div class="stat-card">
+                                <div class="font-display-lg-mobile text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary font-extrabold"
+                                    style="font-size: clamp(1.8rem, 3.5vw, 2.5rem);">10+</div>
+                                <div class="font-label-mono text-label-mono text-on-surface-variant mt-1"
+                                    style="font-size:11px;">Projects</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="font-display-lg-mobile text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-secondary font-extrabold"
+                                    style="font-size: clamp(1.8rem, 3.5vw, 2.5rem);">6+</div>
+                                <div class="font-label-mono text-label-mono text-on-surface-variant mt-1"
+                                    style="font-size:11px;">Languages</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="font-display-lg-mobile text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary font-extrabold"
+                                    style="font-size: clamp(1.8rem, 3.5vw, 2.5rem);">2+</div>
+                                <div class="font-label-mono text-label-mono text-on-surface-variant mt-1"
+                                    style="font-size:11px;">Years Learning</div>
+                            </div>
+                        </div>
+
+                        <!-- Interest tags -->
+                        <div class="fade-section">
+                            <p class="font-label-mono text-label-mono text-on-surface-variant/60 uppercase tracking-widest mb-4"
+                                style="font-size: 11px;">Interests & Focus Areas</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag-pill">Machine Learning</span>
+                                <span class="tag-pill">Web Development</span>
+                                <span class="tag-pill">Data Analysis</span>
+                                <span class="tag-pill">Generative AI</span>
+                                <span class="tag-pill">Open Source</span>
+                                <span class="tag-pill">Problem Solving</span>
+                                <span class="tag-pill">UI / UX</span>
+                                <span class="tag-pill">Databases</span>
+                            </div>
+                        </div>
+
+                        <!-- Download Resume CTA -->
+                        <div class="fade-section">
+                            <a href="../Assets/Resume.docx"
+                                class="inline-flex items-center gap-2 bg-surface-container/50 backdrop-blur-md border border-outline hover:border-primary text-on-surface font-label-mono text-label-mono uppercase tracking-widest px-stack-md py-stack-sm rounded-full hover:-translate-y-1 transition-all duration-300"
+                                download>
+                                <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Divider ── -->
+        <div class="gradient-divider mx-auto max-w-container-max w-full px-margin-mobile relative z-10"></div>
+
+        <!-- ── SECTION 3: Timeline ── -->
+        <section class="relative z-10 py-20 px-margin-mobile">
+            <div class="max-w-container-max mx-auto">
+
+                <div class="fade-section mb-12 flex items-center gap-4">
+                    <span class="w-8 h-[2px] bg-secondary inline-block"></span>
+                    <span
+                        class="font-label-mono text-label-mono text-secondary uppercase tracking-widest">Journey</span>
+                </div>
+
+                <div class="relative">
+                    <!-- Vertical line -->
+                    <div
+                        class="absolute left-[15px] md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-primary/50 via-tertiary/30 to-secondary/30 hidden sm:block">
+                    </div>
+
+                    <div class="flex flex-col gap-10">
+
+                        <!-- Timeline item 1 -->
+                        <div class="fade-section relative flex flex-col sm:flex-row gap-6 sm:gap-0">
+                            <div class="sm:w-1/2 sm:pr-12 sm:text-right flex flex-col justify-center">
+                                <span class="font-label-mono text-label-mono text-tertiary uppercase"
+                                    style="font-size:11px;">2024</span>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">First Full-Stack
+                                    Project</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant mt-1">Personal Portfolio &
+                                    Web Apps</p>
+                            </div>
+                            <div
+                                class="hidden sm:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary border-2 border-background shadow-[0_0_10px_rgba(76,215,246,0.6)] top-1/2 -translate-y-1/2">
+                            </div>
+                            <div class="sm:w-1/2 sm:pl-12">
+                                <p class="font-body-md text-body-md text-on-surface-variant/80 leading-relaxed">
+                                    Courses Learned like Data Structures, Algorithms, DataBase Management System.  
+
+                                    Built my first full-stack web applications using HTML, CSS, JavaScript and Node.js.
+                                    Deployed projects and gained hands-on experience with MongoDB and REST APIs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline item 2 -->
+                        <div class="fade-section relative flex flex-col sm:flex-row gap-6 sm:gap-0">
+                            <div class="sm:w-1/2 sm:pr-12 sm:text-right flex flex-col justify-center">
+                                <span class="font-label-mono text-label-mono text-tertiary uppercase"
+                                    style="font-size:11px;">2025</span>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Deep Dive — ML & AI
+                                </h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant mt-1">Research &
+                                    Experimentation</p>
+                            </div>
+                            <div
+                                class="hidden sm:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-secondary border-2 border-background shadow-[0_0_10px_rgba(221,183,255,0.6)] top-1/2 -translate-y-1/2">
+                            </div>
+                            <div class="sm:w-1/2 sm:pl-12">
+                                <p class="font-body-md text-body-md text-on-surface-variant/80 leading-relaxed">
+                                    Explored machine learning with scikit-learn, TensorFlow, and PyTorch. Built
+                                    classification and
+                                    regression models and started integrating AI into web applications.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline item 3 -->
+                        <div class="fade-section relative flex flex-col sm:flex-row gap-6 sm:gap-0">
+                            <div class="sm:w-1/2 sm:pr-12 sm:text-right flex flex-col justify-center">
+                                <span class="font-label-mono text-label-mono text-tertiary uppercase"
+                                    style="font-size:11px;">2026 – Now</span>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Building
+                                    Intelligently</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant mt-1">AI-Powered Products
+                                </p>
+                            </div>
+                            <div
+                                class="hidden sm:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full border-2 border-primary-container bg-primary-container/30 shadow-[0_0_15px_rgba(0,98,255,0.8)] top-1/2 -translate-y-1/2">
+                                <div class="w-full h-full rounded-full bg-primary-container animate-ping opacity-50">
+                                </div>
+                            </div>
+                            <div class="sm:w-1/2 sm:pl-12">
+                                <p class="font-body-md text-body-md text-on-surface-variant/80 leading-relaxed">
+                                    Developing intelligent web systems powered by LLMs and generative AI, while
+                                    continuing to expand
+                                    skills in React, Python backends, and data engineering pipelines.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer
+        class="relative z-10 bg-surface-container-lowest w-full pt-stack-lg pb-stack-md px-margin-mobile border-t border-surface-variant">
+        <div
+            class="w-full max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-stack-md">
+            <div class="font-headline-sm text-headline-sm text-on-surface">Vishal Kumar Sah</div>
+            <div class="flex items-center gap-stack-sm md:gap-stack-md font-label-mono text-label-mono">
+                <a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform"
+                    href="#">Terminal</a>
+                <a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform"
+                    href="#">Data_Privacy</a>
+                <a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform"
+                    href="#">Source</a>
+            </div>
+            <div class="text-tertiary font-label-mono text-label-mono text-xs text-center md:text-right">
+                © 2024 VKS NEURAL LAB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ══════════════ JavaScript ══════════════ -->
+    <script>
+        // ── Mobile menu toggle ──
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+
+        // ── Animated text: centered paragraph (no per-character spans to avoid skew) ──
+        const ABOUT_TEXT = "I am Vishal Kumar Sah , I am from bihar and i am currently pursuing a Bachelor of Technology in Computer Science with a specialization in Artificial Intelligence and Machine Learning at Galgotias University, Greater Noida. I am passionate about web development and machine learning.Apart from software development, I have a strong interest in data analysis and machine learning. I have worked with tools and libraries such as NumPy, Pandas, Matplotlib, and Seaborn for data processing, visualization, and analytical tasks. These technologies have helped me understand how data can be transformed into meaningful insights and used to build intelligent systems.In addition, I have worked with workflow automation using n8n and Docker. One of the automations I built delivers the top five technology news updates directly to my Telegram account every day. Through this project, I gained practical experience in API integration, workflow orchestration, containerization, and automation.Looking ahead, my goal is to build a successful career in Machine Learning and Artificial Intelligence.";
+
+        const textEl = document.getElementById('animated-about-text');
+        if (textEl) {
+            textEl.textContent = ABOUT_TEXT;
+        }
+
+        // IntersectionObserver for fade-section elements
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+        document.querySelectorAll('.fade-section').forEach(el => fadeObserver.observe(el));
+
+        // Scroll-driven animation removed to keep text perfectly centered (no per-character elements).
+    </script>
+</body>
+
+</html>
