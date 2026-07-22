@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>About Me | Vishal Kumar Sah</title>
+    <title>About Me | Vishal Kumar</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -121,9 +121,9 @@
             line-height: 1;
             letter-spacing: -0.03em;
             font-size: clamp(3rem, 8vw, 6.5rem);
-            /* Gradient text matching the portfolio theme */
             background: linear-gradient(135deg, #b4c5ff 0%, #4cd7f6 50%, #ddb7ff 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -294,7 +294,7 @@
 
 <body
     class="bg-background text-on-background min-h-screen flex flex-col relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container"
-    style="background-color:#000 !important;">
+    style="background-color:#0a0a0f !important;">
 
     <!-- Global Background Shader -->
     <div class="fixed inset-0 w-full h-full z-0 opacity-15 pointer-events-none mix-blend-screen" style="display:block;">
@@ -360,7 +360,7 @@ void main() {
         <div
             class="bg-surface-container/80 backdrop-blur-2xl rounded-full px-stack-md py-base border border-white/15 shadow-[0_0_15px_rgba(0,98,255,0.1)] flex items-center justify-between w-full max-w-container-max mx-auto shadow-2xl shadow-surface-dim/50 pointer-events-auto">
             <a class="font-display-lg-mobile text-display-lg-mobile md:text-[24px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary"
-                href="../home/index.html">Vishal Kumar Sah</a>
+                href="../home/index.html">Vishal Kumar</a>
             <div class="hidden md:flex items-center gap-stack-lg">
                 <div class="flex items-center gap-stack-md font-label-mono text-label-mono uppercase tracking-widest">
                     <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
@@ -408,56 +408,36 @@ void main() {
     <main class="flex-grow relative z-10">
 
         <!-- ── SECTION 1: Hero "About Me" ── -->
-        <section
-            id="about-hero"
+        <section id="about-hero"
             class="relative min-h-screen flex flex-col items-center justify-center overflow-visible pt-28 sm:pt-32 md:pt-40 pb-24"
-            style="background-color:#000 !important; background: #000 !important;"
-        >
+            >
 
             <!-- ═══ Corner Decorative Elements ═══ -->
 
-            <!-- Top-left: Moon -->
-            <div class="corner-deco float-tl" style="top: 5%; left: clamp(1%, 4%, 4%);">
+            <!-- Top-left -->
+            <div class="corner-deco float-tl" style="top: 5%; left: clamp(1%, 4%, 4%);"></div>
 
-            </div>
+            <!-- Bottom-left -->
+            <div class="corner-deco float-bl" style="bottom: 8%; left: clamp(3%, 8%, 8%);"></div>
 
-            <!-- Bottom-left: 3D object -->
-            <div class="corner-deco float-bl" style="bottom: 8%; left: clamp(3%, 8%, 8%);">
+            <!-- Top-right -->
+            <div class="corner-deco float-tr" style="top: 5%; right: clamp(1%, 4%, 4%);"></div>
 
-            </div>
-
-            <!-- Top-right: Lego -->
-            <div class="corner-deco float-tr" style="top: 5%; right: clamp(1%, 4%, 4%);">
-
-            </div>
-
-            <!-- Bottom-right: 3D group -->
-            <div class="corner-deco float-br" style="bottom: 8%; right: clamp(3%, 8%, 8%);">
-
-            </div>
+            <!-- Bottom-right -->
+            <div class="corner-deco float-br" style="bottom: 8%; right: clamp(3%, 8%, 8%);"></div>
 
             <!-- Center content -->
-            <div class="relative z-10 flex flex-col items-center text-center gap-10 sm:gap-14 md:gap-16 px-margin-mobile">
+            <div
+                class="relative z-10 flex flex-col items-center text-center gap-10 sm:gap-14 md:gap-16 px-margin-mobile">
                 <!-- Giant Heading -->
                 <h1 class="about-heading fade-section" id="about-heading">About me</h1>
 
                 <!-- Scroll-animated intro text + button -->
                 <div class="flex flex-col items-center gap-14 sm:gap-18 md:gap-24">
-                    <p
-                        id="animated-about-text"
-                        class="w-full max-w-5xl mx-auto px-5 sm:px-8 text-center text-white font-semibold leading-relaxed fade-section"
-                        style="
-                            font-family: 'Poppins', sans-serif;
-                            font-size: clamp(1rem, 1.7vw, 1.35rem);
-                            word-break: normal;
-                            overflow-wrap: normal;
-                            white-space: normal;
-                            hyphens: none;
-                        "
-                    >
-                        <!-- Characters injected by JS -->
+                    <p id="animated-about-text"
+                        class="w-full max-w-5xl mx-auto px-5 sm:px-8 text-center text-white/70 font-medium leading-relaxed fade-section"
+                        style="font-family:'Poppins',sans-serif; font-size:clamp(1rem,1.7vw,1.35rem); word-break:normal; overflow-wrap:normal; white-space:normal; hyphens:none; text-shadow:0 0 10px rgba(76,215,246,0.3),0 0 30px rgba(76,215,246,0.12);">
                     </p>
-
                     <div class="fade-section">
                         <a href="../contact/index.html" class="contact-btn">Contact Me</a>
                     </div>
@@ -466,7 +446,7 @@ void main() {
 
             <!-- Atmospheric radial glow -->
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
-                style="background: radial-gradient(circle, rgba(0,98,255,0.07) 0%, rgba(76,215,246,0.04) 50%, transparent 100%); filter: blur(60px);">
+                style="background:radial-gradient(circle,rgba(0,98,255,0.07) 0%,rgba(76,215,246,0.04) 50%,transparent 100%);filter:blur(60px);">
             </div>
         </section>
 
@@ -491,25 +471,26 @@ void main() {
                         <h2 class="font-headline-md text-headline-md text-on-surface mb-6">
                             A curious mind building at the<br />
                             intersection of <span
-                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">AI &
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">AI &amp;
                                 Web</span>
                         </h2>
-                        <p class="font-body-lg text-body-lg text-on-surface-variant mb-4 leading-relaxed">
+                        <p class="text-[21px] leading-relaxed text-on-surface-variant/55 mb-4"
+                            style="font-family:'Plus Jakarta Sans',sans-serif;">
                             I'm from Bihar and currently pursuing a B.Tech in Computer Science with a specialisation in
-                            <strong class="text-primary">Artificial Intelligence and Machine Learning</strong> at
+                            <strong class="text-primary/80">Artificial Intelligence and Machine Learning</strong> at
                             Galgotias University.
                         </p>
-                        <p class="font-body-md text-body-md text-on-surface-variant/80 leading-relaxed mb-6">
+                        <p class="text-[21px] leading-relaxed text-on-surface-variant/50 mb-6"
+                            style="font-family:'Plus Jakarta Sans',sans-serif;">
                             With hands-on experience in Java, Python, JavaScript, C++, MySQL, MongoDB, and machine
-                            learning libraries,
-                            I enjoy transforming raw ideas into practical, real-world projects. I'm continuously
-                            sharpening my
-                            problem-solving skills and exploring new technologies to create meaningful impact.
+                            learning libraries, I enjoy transforming raw ideas into practical, real-world projects.
+                            I'm continuously sharpening my problem-solving skills and exploring new technologies to
+                            create meaningful impact.
                         </p>
-                        <p class="font-body-md text-body-md text-on-surface-variant/70 leading-relaxed">
+                        <p class="text-[21px] leading-relaxed text-on-surface-variant/50"
+                            style="font-family:'Plus Jakarta Sans',sans-serif;">
                             When I'm not coding, you'll find me diving into research papers on generative AI,
-                            experimenting with
-                            data visualisation, or contributing to open-source repositories.
+                            experimenting with data visualisation, or contributing to open-source repositories.
                         </p>
                     </div>
 
@@ -519,29 +500,29 @@ void main() {
                         <!-- Stats row -->
                         <div class="fade-section grid grid-cols-3 gap-4">
                             <div class="stat-card">
-                                <div class="font-display-lg-mobile text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary font-extrabold"
+                                <div class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary font-extrabold"
                                     style="font-size: clamp(1.8rem, 3.5vw, 2.5rem);">10+</div>
-                                <div class="font-label-mono text-label-mono text-on-surface-variant mt-1"
-                                    style="font-size:11px;">Projects</div>
+                                <div class="font-label-mono text-on-surface-variant mt-1" style="font-size:11px;">
+                                    Projects</div>
                             </div>
                             <div class="stat-card">
-                                <div class="font-display-lg-mobile text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-secondary font-extrabold"
+                                <div class="text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-secondary font-extrabold"
                                     style="font-size: clamp(1.8rem, 3.5vw, 2.5rem);">6+</div>
-                                <div class="font-label-mono text-label-mono text-on-surface-variant mt-1"
-                                    style="font-size:11px;">Languages</div>
+                                <div class="font-label-mono text-on-surface-variant mt-1" style="font-size:11px;">
+                                    Languages</div>
                             </div>
                             <div class="stat-card">
-                                <div class="font-display-lg-mobile text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary font-extrabold"
+                                <div class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary font-extrabold"
                                     style="font-size: clamp(1.8rem, 3.5vw, 2.5rem);">2+</div>
-                                <div class="font-label-mono text-label-mono text-on-surface-variant mt-1"
-                                    style="font-size:11px;">Years Learning</div>
+                                <div class="font-label-mono text-on-surface-variant mt-1" style="font-size:11px;">Years
+                                    Learning</div>
                             </div>
                         </div>
 
                         <!-- Interest tags -->
                         <div class="fade-section">
                             <p class="font-label-mono text-label-mono text-on-surface-variant/60 uppercase tracking-widest mb-4"
-                                style="font-size: 11px;">Interests & Focus Areas</p>
+                                style="font-size: 11px;">Interests &amp; Focus Areas</p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="tag-pill">Machine Learning</span>
                                 <span class="tag-pill">Web Development</span>
@@ -571,7 +552,7 @@ void main() {
         <!-- ── Divider ── -->
         <div class="gradient-divider mx-auto max-w-container-max w-full px-margin-mobile relative z-10"></div>
 
-        <!-- ── SECTION 3: Timeline ── -->
+        <!-- ── SECTION 3: Journey / Timeline ── -->
         <section class="relative z-10 py-20 px-margin-mobile">
             <div class="max-w-container-max mx-auto">
 
@@ -596,7 +577,8 @@ void main() {
                                     style="font-size:11px;">2024</span>
                                 <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">First Full-Stack
                                     Project</h3>
-                                <p class="font-body-md text-body-md text-on-surface-variant mt-1">Personal Portfolio &
+                                <p class="font-body-md text-body-md text-on-surface-variant mt-1">Personal Portfolio
+                                    &amp;
                                     Web Apps</p>
                             </div>
                             <div
@@ -604,9 +586,9 @@ void main() {
                             </div>
                             <div class="sm:w-1/2 sm:pl-12">
                                 <p class="font-body-md text-body-md text-on-surface-variant/80 leading-relaxed">
-                                    Courses Learned like Data Structures, Algorithms, DataBase Management System.  
-
-                                    Built my first full-stack web applications using HTML, CSS, JavaScript and Node.js.
+                                    Courses Learned like Data Structures, Algorithms, DataBase Management System.
+                                    Built my first full-stack web applications using HTML, CSS, JavaScript and
+                                    Node.js.
                                     Deployed projects and gained hands-on experience with MongoDB and REST APIs.
                                 </p>
                             </div>
@@ -617,9 +599,10 @@ void main() {
                             <div class="sm:w-1/2 sm:pr-12 sm:text-right flex flex-col justify-center">
                                 <span class="font-label-mono text-label-mono text-tertiary uppercase"
                                     style="font-size:11px;">2025</span>
-                                <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Deep Dive — ML & AI
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Deep Dive — ML &amp;
+                                    AI
                                 </h3>
-                                <p class="font-body-md text-body-md text-on-surface-variant mt-1">Research &
+                                <p class="font-body-md text-body-md text-on-surface-variant mt-1">Research &amp;
                                     Experimentation</p>
                             </div>
                             <div
@@ -641,7 +624,8 @@ void main() {
                                     style="font-size:11px;">2026 – Now</span>
                                 <h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Building
                                     Intelligently</h3>
-                                <p class="font-body-md text-body-md text-on-surface-variant mt-1">AI-Powered Products
+                                <p class="font-body-md text-body-md text-on-surface-variant mt-1">AI-Powered
+                                    Products
                                 </p>
                             </div>
                             <div
@@ -670,7 +654,7 @@ void main() {
         class="relative z-10 bg-surface-container-lowest w-full pt-stack-lg pb-stack-md px-margin-mobile border-t border-surface-variant">
         <div
             class="w-full max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-stack-md">
-            <div class="font-headline-sm text-headline-sm text-on-surface">Vishal Kumar Sah</div>
+            <div class="font-headline-sm text-headline-sm text-on-surface">Vishal Kumar</div>
             <div class="flex items-center gap-stack-sm md:gap-stack-md font-label-mono text-label-mono">
                 <a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform"
                     href="#">Terminal</a>
@@ -680,7 +664,7 @@ void main() {
                     href="#">Source</a>
             </div>
             <div class="text-tertiary font-label-mono text-label-mono text-xs text-center md:text-right">
-                © 2024 VKS NEURAL LAB. ALL RIGHTS RESERVED.
+                &copy; 2024 VKS NEURAL LAB. ALL RIGHTS RESERVED.
             </div>
         </div>
     </footer>
@@ -694,8 +678,8 @@ void main() {
             menu.classList.toggle('flex');
         }
 
-        // ── Animated text: centered paragraph (no per-character spans to avoid skew) ──
-        const ABOUT_TEXT = "I am Vishal Kumar Sah , I am from bihar and i am currently pursuing a Bachelor of Technology in Computer Science with a specialization in Artificial Intelligence and Machine Learning at Galgotias University, Greater Noida. I am passionate about web development and machine learning.Apart from software development, I have a strong interest in data analysis and machine learning. I have worked with tools and libraries such as NumPy, Pandas, Matplotlib, and Seaborn for data processing, visualization, and analytical tasks. These technologies have helped me understand how data can be transformed into meaningful insights and used to build intelligent systems.In addition, I have worked with workflow automation using n8n and Docker. One of the automations I built delivers the top five technology news updates directly to my Telegram account every day. Through this project, I gained practical experience in API integration, workflow orchestration, containerization, and automation.Looking ahead, my goal is to build a successful career in Machine Learning and Artificial Intelligence.";
+        // ── Animated text ──
+        const ABOUT_TEXT = "I am Vishal Kumar Sah, I am from Bihar and I am currently pursuing a Bachelor of Technology in Computer Science with a specialization in Artificial Intelligence and Machine Learning at Galgotias University, Greater Noida. I am passionate about web development and machine learning. Apart from software development, I have a strong interest in data analysis and machine learning. I have worked with tools and libraries such as NumPy, Pandas, Matplotlib, and Seaborn for data processing, visualization, and analytical tasks. These technologies have helped me understand how data can be transformed into meaningful insights and used to build intelligent systems. In addition, I have worked with workflow automation using n8n and Docker. One of the automations I built delivers the top five technology news updates directly to my Telegram account every day. Through this project, I gained practical experience in API integration, workflow orchestration, containerization, and automation. Looking ahead, my goal is to build a successful career in Machine Learning and Artificial Intelligence.";
 
         const textEl = document.getElementById('animated-about-text');
         if (textEl) {
@@ -712,8 +696,6 @@ void main() {
         }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
         document.querySelectorAll('.fade-section').forEach(el => fadeObserver.observe(el));
-
-        // Scroll-driven animation removed to keep text perfectly centered (no per-character elements).
     </script>
 </body>
 

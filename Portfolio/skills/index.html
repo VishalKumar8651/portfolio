@@ -1,251 +1,774 @@
-<!DOCTYPE html><html lang="en" class="dark" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Sora:wght@400;600;800&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><meta charset="utf-8"><script id="tailwind-config">try{
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "surface-tint": "#b4c5ff",
-                        "primary-fixed": "#dbe1ff",
-                        "surface-container-low": "#0d1c2d",
-                        "surface-bright": "#2c3a4c",
-                        "primary-fixed-dim": "#b4c5ff",
-                        "tertiary-fixed": "#acedff",
-                        "on-error": "#690005",
-                        "surface": "#051424",
-                        "secondary-fixed-dim": "#ddb7ff",
-                        "surface-container-lowest": "#010f1f",
-                        "outline-variant": "#424656",
-                        "on-secondary": "#490080",
-                        "outline": "#8c90a2",
-                        "surface-container-highest": "#273647",
-                        "on-primary-fixed": "#00174b",
-                        "tertiary-container": "#007a8f",
-                        "inverse-on-surface": "#233143",
-                        "error-container": "#93000a",
-                        "on-secondary-fixed": "#2c0051",
-                        "on-primary": "#002a78",
-                        "on-tertiary-fixed-variant": "#004e5c",
-                        "on-surface-variant": "#c2c6d9",
-                        "error": "#ffb4ab",
-                        "secondary-container": "#6f00be",
-                        "on-error-container": "#ffdad6",
-                        "surface-container": "#122131",
-                        "on-tertiary": "#003640",
-                        "on-tertiary-fixed-variant": "#001f26",
-                        "on-background": "#d4e4fa",
-                        "secondary-fixed": "#f0dbff",
-                        "primary": "#b4c5ff",
-                        "primary-container": "#0062ff",
-                        "inverse-primary": "#0053da",
-                        "secondary": "#ddb7ff",
-                        "on-tertiary-container": "#e0f8ff",
-                        "tertiary-fixed-dim": "#4cd7f6",
-                        "tertiary": "#4cd7f6",
-                        "surface-container-high": "#1c2b3c",
-                        "on-secondary-container": "#d6a9ff",
-                        "on-primary-container": "#f3f3ff",
-                        "background": "#051424",
-                        "surface-variant": "#273647",
-                        "inverse-surface": "#d4e4fa",
-                        "on-secondary-fixed-variant": "#6900b3"
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    spacing: {
-                        "margin-mobile": "20px",
-                        "container-max": "1280px",
-                        "base": "8px",
-                        "stack-lg": "48px",
-                        "gutter": "24px",
-                        "stack-sm": "12px",
-                        "stack-md": "24px"
-                    },
-                    fontFamily: {
-                        "display-lg-mobile": ["Sora"],
-                        "display-lg": ["Sora"],
-                        "body-md": ["Plus Jakarta Sans"],
-                        "body-lg": ["Plus Jakarta Sans"],
-                        "label-mono": ["JetBrains Mono"],
-                        "headline-sm": ["Sora"],
-                        "headline-md": ["Sora"]
-                    },
-                    fontSize: {
-                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "label-mono": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
-                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
-                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
-                    }
-                }
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | VKS Neural Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Sora:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    try {
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#b4c5ff",
+              "primary-fixed": "#dbe1ff",
+              "surface-container-low": "#0d1c2d",
+              "surface-bright": "#2c3a4c",
+              "primary-fixed-dim": "#b4c5ff",
+              "tertiary-fixed": "#acedff",
+              "on-error": "#690005",
+              "surface": "#051424",
+              "secondary-fixed-dim": "#ddb7ff",
+              "surface-container-lowest": "#010f1f",
+              "outline-variant": "#424656",
+              "on-secondary": "#490080",
+              "outline": "#8c90a2",
+              "surface-container-highest": "#273647",
+              "on-primary-fixed": "#00174b",
+              "tertiary-container": "#007a8f",
+              "inverse-on-surface": "#233143",
+              "error-container": "#93000a",
+              "on-secondary-fixed": "#2c0051",
+              "on-primary": "#002a78",
+              "on-tertiary-fixed-variant": "#004e5c",
+              "on-surface-variant": "#c2c6d9",
+              "error": "#ffb4ab",
+              "secondary-container": "#6f00be",
+              "on-error-container": "#ffdad6",
+              "surface-container": "#122131",
+              "on-tertiary": "#003640",
+              "on-background": "#d4e4fa",
+              "secondary-fixed": "#f0dbff",
+              "primary": "#b4c5ff",
+              "primary-container": "#0062ff",
+              "inverse-primary": "#0053da",
+              "secondary": "#ddb7ff",
+              "on-tertiary-container": "#e0f8ff",
+              "tertiary-fixed-dim": "#4cd7f6",
+              "tertiary": "#4cd7f6",
+              "surface-container-high": "#1c2b3c",
+              "on-secondary-container": "#d6a9ff",
+              "on-primary-container": "#f3f3ff",
+              "background": "#051424",
+              "surface-variant": "#273647",
+              "inverse-surface": "#d4e4fa",
+              "on-secondary-fixed-variant": "#6900b3"
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+            spacing: {
+              "margin-mobile": "20px",
+              "container-max": "1280px",
+              "base": "8px",
+              "stack-lg": "48px",
+              "gutter": "24px",
+              "stack-sm": "12px",
+              "stack-md": "24px"
+            },
+            fontFamily: {
+              "display-lg-mobile": ["Sora"],
+              "display-lg": ["Sora"],
+              "body-md": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "label-mono": ["JetBrains Mono"],
+              "headline-sm": ["Sora"],
+              "headline-md": ["Sora"]
+            },
+            fontSize: {
+              "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+              "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+              "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+              "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+              "label-mono": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+              "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+              "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
             }
+          }
         }
-    }catch(_e){}</script></head><body class="bg-background text-on-surface antialiased min-h-screen flex flex-col relative overflow-x-hidden">
-<!-- Background Shader -->
-<div class="fixed inset-0 z-0 opacity-40 pointer-events-none mix-blend-screen">
+      }
+    } catch (e) { }
+  </script>
 
-</div>
-<!-- TopNavBar (Shared Component) -->
-<nav
-  class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-stack-sm md:pt-stack-md px-margin-mobile pointer-events-none">
-  <div
-    class="bg-surface-container/80 backdrop-blur-2xl rounded-full px-stack-md py-base border border-white/15 shadow-[0_0_15px_rgba(0,98,255,0.1)] flex items-center justify-between w-full max-w-container-max mx-auto shadow-2xl shadow-surface-dim/50 pointer-events-auto">
-    <a href="../home/index.html"
-      class="font-display-lg-mobile text-display-lg-mobile md:text-[24px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">
-      Vishal Kumar Sah
-    </a>
-    <div class="hidden md:flex items-center gap-stack-lg">
-      <div class="flex items-center gap-stack-md font-label-mono text-label-mono uppercase tracking-widest">
-        <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
-          href="../home/index.html">Home</a>
-        <a class="text-tertiary border-b border-tertiary pb-1 hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
-          href="../skills/index.html">Skills</a>
-        <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
-          href="../projects/index.html">Projects</a>
-        <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
-          href="../about/index.html">About</a>
-        <a class="text-on-surface-variant hover:text-primary transition-all duration-300 active:scale-95 transition-transform duration-150"
-          href="../contact/index.html">Contact</a>
-      </div>
-      <a href="../contact/index.html"
-        class="font-label-mono text-label-mono uppercase tracking-widest text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary/10 transition-colors">
-        Connect
+  <style>
+    /* Neural canvas */
+    #neural-canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: crosshair;
+    }
+
+    .neural-wrap {
+      position: relative;
+      width: 100%;
+      height: 360px;
+      border-radius: 16px;
+      background: rgba(5, 20, 36, 0.7);
+      border: 1px solid rgba(76, 215, 246, 0.15);
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+    }
+
+    @media (min-width: 768px) {
+      .neural-wrap {
+        height: 520px;
+      }
+    }
+
+    /* HUD status panel */
+    .hud-panel {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #4cd7f6;
+      background: rgba(5, 20, 36, 0.85);
+      border: 1px solid rgba(76, 215, 246, 0.25);
+      border-radius: 10px;
+      padding: 14px 18px;
+      letter-spacing: 0.05em;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .hud-panel .hud-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .hud-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #4cd7f6;
+      box-shadow: 0 0 6px #4cd7f6;
+      animation: hud-blink 2s ease-in-out infinite;
+    }
+
+    .hud-dot.purple {
+      background: #ddb7ff;
+      box-shadow: 0 0 6px #ddb7ff;
+      animation-delay: 0.7s;
+    }
+
+    .hud-dot.blue {
+      background: #b4c5ff;
+      box-shadow: 0 0 6px #b4c5ff;
+      animation-delay: 1.4s;
+    }
+
+    @keyframes hud-blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
+    }
+
+    /* Tooltip */
+    #nn-tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: rgba(5, 20, 36, 0.95);
+      border: 1px solid rgba(76, 215, 246, 0.4);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #d4e4fa;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 20px rgba(76, 215, 246, 0.15);
+      transition: opacity 0.2s;
+      z-index: 9999;
+      min-width: 150px;
+    }
+
+    #nn-tooltip .tt-title {
+      color: #4cd7f6;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+
+    #nn-tooltip .tt-sub {
+      color: #c2c6d9;
+      font-size: 10px;
+      margin-bottom: 3px;
+    }
+
+    #nn-tooltip .tt-tags {
+      color: #b4c5ff;
+      font-size: 10px;
+    }
+
+    .glass-card {
+      background: rgba(18, 33, 49, 0.6);
+      border: 1px solid rgba(76, 215, 246, 0.12);
+      backdrop-filter: blur(16px);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .glass-card:hover {
+      border-color: rgba(76, 215, 246, 0.3);
+      box-shadow: 0 0 20px rgba(76, 215, 246, 0.08);
+    }
+
+    .skill-pill {
+      background: rgba(180, 197, 255, 0.07);
+      border: 1px solid rgba(180, 197, 255, 0.2);
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .skill-pill:hover {
+      background: rgba(180, 197, 255, 0.15);
+      border-color: rgba(180, 197, 255, 0.4);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+
+  <!-- Fixed Nav -->
+  <nav
+    class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-stack-sm md:pt-stack-md px-margin-mobile pointer-events-none">
+    <div
+      class="bg-surface-container/80 backdrop-blur-2xl rounded-full px-stack-md py-base border border-white/15 shadow-[0_0_15px_rgba(0,98,255,0.1)] flex items-center justify-between w-full max-w-container-max mx-auto pointer-events-auto">
+      <a href="../home/index.html"
+        class="text-[20px] md:text-[24px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary font-display-lg-mobile">
+        Vishal Kumar
       </a>
+      <div class="hidden md:flex items-center gap-stack-lg">
+        <div class="flex items-center gap-stack-md font-label-mono text-label-mono uppercase tracking-widest">
+          <a class="text-on-surface-variant hover:text-primary transition-all duration-300"
+            href="../home/index.html">Home</a>
+          <a class="text-tertiary border-b border-tertiary pb-1" href="../skills/index.html">Skills</a>
+          <a class="text-on-surface-variant hover:text-primary transition-all duration-300"
+            href="../projects/index.html">Projects</a>
+          <a class="text-on-surface-variant hover:text-primary transition-all duration-300"
+            href="../about/index.html">About</a>
+          <a class="text-on-surface-variant hover:text-primary transition-all duration-300"
+            href="../contact/index.html">Contact</a>
+        </div>
+        <a href="../contact/index.html"
+          class="font-label-mono text-label-mono uppercase tracking-widest text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary/10 transition-colors">
+          Connect
+        </a>
+      </div>
+      <button class="md:hidden text-primary" onclick="toggleMobileMenu()">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
     </div>
-    <button class="md:hidden text-primary">
-      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu"
+    class="fixed inset-0 z-40 bg-surface-container-lowest/95 backdrop-blur-xl flex-col items-center justify-center gap-8 hidden">
+    <button onclick="toggleMobileMenu()" class="absolute top-6 right-6 text-primary">
+      <span class="material-symbols-outlined">close</span>
     </button>
+    <div class="flex flex-col items-center gap-8 font-label-mono text-label-mono uppercase tracking-widest text-2xl">
+      <a href="../home/index.html" class="text-white hover:text-primary transition-colors">Home</a>
+      <a href="../skills/index.html" class="text-tertiary">Skills</a>
+      <a href="../projects/index.html" class="text-white hover:text-primary transition-colors">Projects</a>
+      <a href="../about/index.html" class="text-white hover:text-primary transition-colors">About</a>
+      <a href="../contact/index.html" class="text-white hover:text-primary transition-colors">Contact</a>
+    </div>
   </div>
-</nav>
-<main class="flex-grow z-10 relative pt-32 pb-24 px-margin-mobile md:px-0 w-full max-w-container-max mx-auto">
-<!-- Hero Section -->
-<section class="mb-stack-lg text-center md:text-left flex flex-col items-center md:items-start gap-4">
-<div class="inline-block font-label-mono text-label-mono text-tertiary bg-tertiary/10 px-4 py-2 rounded-full border border-tertiary/20 mb-2">
-                [SYSTEM_SCAN: SKILLS_MODULE]
-            </div>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">
-                <span class="text-tertiary">Skill Nexus</span><br><span class="text-tertiary">Cognitive Stack</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-background max-w-2xl mt-4">
-                A quantitative map of technical capabilities within the VKS Neural Lab ecosystem.
-            </p>
-</section>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-<!-- Main Content: Skill Grids -->
-<div class="flex flex-col gap-stack-sm lg:col-span-12">
-<!-- Category 1: Programming Core -->
-<div class="glass-card rounded-xl p-8 tilt-card group">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-tertiary">code_blocks</span>
-<h2 class="font-headline-sm text-headline-sm text-on-background">Programming Core</h2>
-</div>
-<div class="flex flex-wrap gap-3">
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-primary flex items-center gap-2 cursor-default">
-                            C
-                        </div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-primary flex items-center gap-2 cursor-default">
-                            C++
-                        </div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-primary flex items-center gap-2 cursor-default">
-                            Java
-                        </div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-primary flex items-center gap-2 cursor-default">
-                            Core Python
-                        </div>
-</div>
-</div>
-<!-- Category 2: AI & Data Science -->
-<div class="glass-card rounded-xl p-8 tilt-card group">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-secondary">psychology</span>
-<h2 class="font-headline-sm text-headline-sm text-on-background">AI &amp; Data Science</h2>
-</div>
-<div class="flex flex-wrap gap-3">
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">NumPy</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">Pandas</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">Matplotlib</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">Seaborn</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">Scikit-learn</div>
-</div>
-</div>
-<!-- Category 3: Web Architecture -->
-<div class="glass-card rounded-xl p-8 tilt-card group">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-tertiary-fixed-dim">language</span>
-<h2 class="font-headline-sm text-headline-sm text-on-background">Web Architecture</h2>
-</div>
-<div class="flex flex-wrap gap-3">
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">HTML</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">CSS</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">Tailwind</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">JavaScript (React)</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">Node.js</div>
-</div>
-</div>
-<!-- Category 4 & 5 Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-sm">
-<!-- Category 4: Data Persistence -->
-<div class="glass-card rounded-xl p-8 tilt-card group">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary-fixed">database</span>
-<h2 class="font-headline-sm text-headline-sm text-on-background">Data Persistence</h2>
-</div>
-<div class="flex flex-wrap gap-3">
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">SQL</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">MongoDB</div>
-</div>
-</div>
-<!-- Category 5: Automation -->
 
-</div>
-<div class="glass-card rounded-xl p-8 tilt-card group">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-secondary-fixed">precision_manufacturing</span>
-<h2 class="font-headline-sm text-headline-sm text-on-background">Automation &amp; Orchestration</h2>
-</div>
-<div class="flex flex-wrap gap-3">
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">n8n</div>
-<div class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">Workflows</div>
-</div>
-</div></div>
-<!-- Sidebar: Proficiency Matrix -->
+  <main class="flex-grow z-10 relative pt-32 pb-24 px-margin-mobile w-full max-w-container-max mx-auto">
+    <!-- Hero Section -->
+    <section class="mb-stack-lg text-center md:text-left flex flex-col items-center md:items-start gap-4">
+      <div
+        class="inline-block font-label-mono text-label-mono text-tertiary bg-tertiary/10 px-4 py-2 rounded-full border border-tertiary/20 mb-2">
+        [SYSTEM_SCAN: SKILLS_MODULE]
+      </div>
+      <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile text-on-surface">
+        <span class="text-tertiary">Skill Nexus</span><br>
+        <span class="text-tertiary">Cognitive Stack</span>
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-background max-w-2xl mt-4">
+        A quantitative map of technical capabilities within the VKS Neural Lab ecosystem.
+      </p>
+    </section>
 
-</div>
-</main>
-<!-- Footer from JSON -->
-<footer class="w-full bg-surface-container-lowest pt-stack-lg pb-stack-md px-margin-mobile border-t border-surface-variant relative z-10">
-<div class="w-full max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-stack-md">
-<div class="font-headline-sm text-headline-sm text-on-surface">
-                © 2024 VKS NEURAL LAB. ALL RIGHTS RESERVED.
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+      <!-- Left: Skill Grid -->
+      <div class="flex flex-col gap-stack-sm lg:col-span-7">
+
+        <!-- Programming Core -->
+        <div class="glass-card rounded-xl p-6 md:p-8 tilt-card group">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-tertiary">code_blocks</span>
+            <h2 class="font-headline-sm text-headline-sm text-on-background">Programming Core</h2>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-primary flex items-center gap-2 cursor-default">
+              C</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-primary flex items-center gap-2 cursor-default">
+              C++</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-primary flex items-center gap-2 cursor-default">
+              Java</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-primary flex items-center gap-2 cursor-default">
+              Core Python</div>
+          </div>
+        </div>
+
+        <!-- AI & Data Science -->
+        <div class="glass-card rounded-xl p-6 md:p-8 tilt-card group">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-secondary">psychology</span>
+            <h2 class="font-headline-sm text-headline-sm text-on-background">AI &amp; Data Science</h2>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              NumPy</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              Pandas</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              Matplotlib</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              Seaborn</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              Scikit-learn</div>
+          </div>
+        </div>
+
+        <!-- Web Architecture -->
+        <div class="glass-card rounded-xl p-6 md:p-8 tilt-card group">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-tertiary-fixed-dim">language</span>
+            <h2 class="font-headline-sm text-headline-sm text-on-background">Web Architecture</h2>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              HTML</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              CSS</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              Tailwind</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              JavaScript (React)</div>
+            <div
+              class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+              Node.js</div>
+          </div>
+        </div>
+
+        <!-- Data + Automation Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-sm">
+          <div class="glass-card rounded-xl p-6 md:p-8 tilt-card group">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="material-symbols-outlined text-primary-fixed">database</span>
+              <h2 class="font-headline-sm text-headline-sm text-on-background">Data Persistence</h2>
             </div>
-<ul class="flex items-center gap-6 font-label-mono text-label-mono text-on-surface-variant">
-<li class="hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform cursor-pointer">Terminal</li>
-<li class="hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform cursor-pointer">Data_Privacy</li>
-<li class="hover:text-tertiary-fixed-dim transition-colors hover:translate-x-1 transition-transform cursor-pointer">Source</li>
-</ul>
-</div>
-</footer>
-<script>
-  // Tilt effect (safe + complete) for glass cards
-  (function () {
-    const cards = document.querySelectorAll('.tilt-card');
-    cards.forEach(card => {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const px = (x / rect.width) * 2 - 1;  // -1..1
-        const py = (y / rect.height) * 2 - 1; // -1..1
-        card.style.transform = `rotateX(${(-py * 6).toFixed(2)}deg) rotateY(${(px * 6).toFixed(2)}deg) translateZ(0)`;
+            <div class="flex flex-wrap gap-3">
+              <div
+                class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+                SQL</div>
+              <div
+                class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+                MongoDB</div>
+            </div>
+          </div>
+          <div class="glass-card rounded-xl p-6 md:p-8 tilt-card group">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="material-symbols-outlined text-secondary-fixed">precision_manufacturing</span>
+              <h2 class="font-headline-sm text-headline-sm text-on-background">Automation &amp; Orchestration</h2>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <div
+                class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+                n8n</div>
+              <div
+                class="skill-pill rounded-full px-4 py-2 font-label-mono text-label-mono text-on-background flex items-center gap-2 cursor-default">
+                Workflows</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Neural Network Visualization -->
+      <div class="lg:col-span-5 flex flex-col gap-3 sticky top-32">
+        <div
+          class="font-label-mono text-label-mono text-tertiary uppercase tracking-widest mb-1 flex items-center gap-2">
+          <span style="width:20px;height:1px;background:#4cd7f6;display:inline-block;"></span>
+          Neural Skill Map
+        </div>
+        <div class="neural-wrap">
+          <canvas id="neural-canvas"></canvas>
+        </div>
+        <div class="hud-panel">
+          <div class="hud-item"><span class="hud-dot"></span> SYSTEM STATUS: ONLINE</div>
+          <div class="hud-item"><span class="hud-dot blue"></span> 08+ TECHNOLOGIES</div>
+          <div class="hud-item"><span class="hud-dot purple"></span> 04 CORE DOMAINS</div>
+          <div class="hud-item"><span class="hud-dot"></span> LEARNING MODE: ACTIVE</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer
+    class="w-full bg-surface-container-lowest pt-stack-lg pb-stack-md px-margin-mobile border-t border-surface-variant relative z-10">
+    <div class="w-full max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-stack-md">
+      <div class="font-headline-sm text-headline-sm text-on-surface">&copy; 2024 VKS NEURAL LAB. ALL RIGHTS RESERVED.
+      </div>
+      <ul class="flex items-center gap-6 font-label-mono text-label-mono text-on-surface-variant">
+        <li class="hover:text-tertiary-fixed-dim transition-colors cursor-pointer">Terminal</li>
+        <li class="hover:text-tertiary-fixed-dim transition-colors cursor-pointer">Data_Privacy</li>
+        <li class="hover:text-tertiary-fixed-dim transition-colors cursor-pointer">Source</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Tooltip -->
+  <div id="nn-tooltip" style="opacity:0;position:fixed;top:0;left:0;"></div>
+
+  <script>
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+    }
+
+    // Tilt effect for glass cards
+    (function () {
+      const cards = document.querySelectorAll('.tilt-card');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const px = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+          const py = ((e.clientY - rect.top) / rect.height) * 2 - 1;
+          card.style.transform = `rotateX(${(-py * 6).toFixed(2)}deg) rotateY(${(px * 6).toFixed(2)}deg) translateZ(0)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0)';
+        });
       });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0)';
+    })();
+
+    // Neural Network Visualization
+    (function () {
+      const canvas = document.getElementById('neural-canvas');
+      const tooltip = document.getElementById('nn-tooltip');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      const SKILLS = [
+        { label: 'JAVA', sub: 'Primary Language', tags: 'DSA · OOP · Backend', color: '#b4c5ff', r: 26 },
+        { label: 'PYTHON', sub: 'Core Language', tags: 'ML · Scripting · Data', color: '#4cd7f6', r: 26 },
+        { label: 'ML', sub: 'Machine Learning', tags: 'Scikit · TF · Models', color: '#ddb7ff', r: 24 },
+        { label: 'REACT', sub: 'Frontend Framework', tags: 'SPA · Hooks · UI', color: '#4cd7f6', r: 22 },
+        { label: 'NODE.JS', sub: 'Backend Runtime', tags: 'REST · Express · APIs', color: '#b4c5ff', r: 22 },
+        { label: 'MONGODB', sub: 'NoSQL Database', tags: 'Documents · Atlas · ODM', color: '#ddb7ff', r: 20 },
+        { label: 'DATA ANALYSIS', sub: 'Analytics', tags: 'Pandas · NumPy · Seaborn', color: '#4cd7f6', r: 20 },
+        { label: 'SCIKIT-LEARN', sub: 'ML Library', tags: 'Models · Pipelines · CV', color: '#b4c5ff', r: 18 }
+      ];
+
+      let W, H, cx, cy;
+      let mouse = { x: -999, y: -999 };
+      let hoveredIdx = -1;
+      let globalAngle = 0;
+      const particles = [];
+
+      const floatPhase = SKILLS.map(() => Math.random() * Math.PI * 2);
+      const floatAmp = SKILLS.map(() => 10 + Math.random() * 14);
+      const floatSpeed = SKILLS.map(() => 0.4 + Math.random() * 0.5);
+      const baseAngles = [0, 45, 105, 160, 210, 265, 315, 355].map(d => d * Math.PI / 180);
+      const baseRadii = [170, 155, 175, 160, 165, 150, 170, 155];
+
+      function resize() {
+        const wrap = canvas.parentElement;
+        W = canvas.width = wrap.clientWidth || 420;
+        H = canvas.height = wrap.clientHeight || 520;
+        cx = W / 2;
+        cy = H / 2;
+      }
+
+      function getNodePos(i, t) {
+        const angle = baseAngles[i] + globalAngle;
+        const rad = baseRadii[i];
+        const fx = Math.cos(floatPhase[i] + t * floatSpeed[i]) * floatAmp[i];
+        const fy = Math.sin(floatPhase[i] + t * floatSpeed[i] * 0.8) * floatAmp[i] * 0.6;
+        const px = (mouse.x / W - 0.5) * 18;
+        const py = (mouse.y / H - 0.5) * 18;
+        return {
+          x: cx + Math.cos(angle) * rad + fx + px,
+          y: cy + Math.sin(angle) * rad + fy + py
+        };
+      }
+
+      function spawnParticle(nx, ny) {
+        particles.push({ x: nx, y: ny, progress: 0, speed: 0.004 + Math.random() * 0.006, size: 1.5 + Math.random() * 1.5 });
+      }
+
+      function drawGrid() {
+        ctx.save();
+        ctx.strokeStyle = 'rgba(76,215,246,0.04)';
+        ctx.lineWidth = 1;
+        for (let r = 50; r <= Math.max(W, H) * 0.7; r += 55) {
+          ctx.beginPath();
+          ctx.arc(cx, cy, r, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+        for (let a = 0; a < 360; a += 30) {
+          const rad = a * Math.PI / 180;
+          ctx.beginPath();
+          ctx.moveTo(cx, cy);
+          ctx.lineTo(cx + Math.cos(rad) * W, cy + Math.sin(rad) * W);
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+
+      function drawLine(x1, y1, x2, y2, hovered, t) {
+        const pulse = 0.3 + 0.2 * Math.sin(t * 1.5);
+        const alpha = hovered ? 0.7 : (hoveredIdx >= 0 ? 0.06 : pulse);
+        const grad = ctx.createLinearGradient(x1, y1, x2, y2);
+        grad.addColorStop(0, `rgba(180, 197, 255, ${alpha})`);
+        grad.addColorStop(1, `rgba(76, 215, 246, ${alpha})`);
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = hovered ? 1.5 : 0.8;
+        if (hovered) { ctx.shadowColor = '#4cd7f6'; ctx.shadowBlur = 8; }
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+      }
+
+      function drawNode(i, pos, t) {
+        const sk = SKILLS[i];
+        const isHov = (i === hoveredIdx);
+        const isDim = (hoveredIdx >= 0 && !isHov);
+        const r = sk.r + (isHov ? 6 : 0);
+        const alpha = isDim ? 0.25 : 1;
+
+        ctx.save();
+        ctx.globalAlpha = alpha;
+
+        const glowSize = isHov ? 28 : (12 + 4 * Math.sin(t * 1.2 + i));
+        const grd = ctx.createRadialGradient(pos.x, pos.y, r * 0.3, pos.x, pos.y, r + glowSize);
+        grd.addColorStop(0, sk.color + '55');
+        grd.addColorStop(1, 'transparent');
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, r + glowSize, 0, Math.PI * 2);
+        ctx.fillStyle = grd;
+        ctx.fill();
+
+        const body = ctx.createRadialGradient(pos.x - r * 0.3, pos.y - r * 0.3, 1, pos.x, pos.y, r);
+        body.addColorStop(0, 'rgba(30,50,70,0.95)');
+        body.addColorStop(1, 'rgba(5,20,36,0.9)');
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, r, 0, Math.PI * 2);
+        ctx.fillStyle = body;
+        ctx.shadowColor = sk.color;
+        ctx.shadowBlur = isHov ? 20 : 8;
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, r, 0, Math.PI * 2);
+        ctx.strokeStyle = sk.color + (isHov ? 'ff' : '99');
+        ctx.lineWidth = isHov ? 2 : 1;
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+
+        ctx.fillStyle = isHov ? '#ffffff' : (isDim ? sk.color + '66' : sk.color);
+        ctx.font = `500 ${r < 22 ? 8 : 9}px 'JetBrains Mono', monospace`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        const words = sk.label.split(' ');
+        if (words.length > 1) {
+          ctx.fillText(words[0], pos.x, pos.y - 5);
+          ctx.fillText(words[1], pos.x, pos.y + 6);
+        } else {
+          ctx.fillText(sk.label, pos.x, pos.y);
+        }
+        ctx.restore();
+      }
+
+      function drawCenter(t) {
+        const pulse = 1 + 0.06 * Math.sin(t * 1.8);
+        const R = 44 * pulse;
+        const px = (mouse.x / W - 0.5) * 8;
+        const py = (mouse.y / H - 0.5) * 8;
+        const nx = cx + px, ny = cy + py;
+
+        const glowR = R + 30 + 15 * Math.sin(t * 1.2);
+        const g = ctx.createRadialGradient(nx, ny, R * 0.2, nx, ny, glowR);
+        g.addColorStop(0, 'rgba(76,215,246,0.25)');
+        g.addColorStop(0.5, 'rgba(76,215,246,0.08)');
+        g.addColorStop(1, 'transparent');
+        ctx.beginPath();
+        ctx.arc(nx, ny, glowR, 0, Math.PI * 2);
+        ctx.fillStyle = g;
+        ctx.fill();
+
+        ctx.save();
+        ctx.translate(nx, ny);
+        ctx.rotate(t * 0.4);
+        ctx.beginPath();
+        ctx.arc(0, 0, R + 10, 0, Math.PI * 1.5);
+        ctx.strokeStyle = 'rgba(76,215,246,0.3)';
+        ctx.lineWidth = 1;
+        ctx.setLineDash([4, 8]);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.restore();
+
+        const body = ctx.createRadialGradient(nx - R * 0.3, ny - R * 0.3, 2, nx, ny, R);
+        body.addColorStop(0, 'rgba(0,98,255,0.6)');
+        body.addColorStop(1, 'rgba(5,20,36,0.95)');
+        ctx.beginPath();
+        ctx.arc(nx, ny, R, 0, Math.PI * 2);
+        ctx.fillStyle = body;
+        ctx.shadowColor = '#4cd7f6';
+        ctx.shadowBlur = 24;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        ctx.beginPath();
+        ctx.arc(nx, ny, R, 0, Math.PI * 2);
+        ctx.strokeStyle = '#4cd7f6cc';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        ctx.fillStyle = '#4cd7f6';
+        ctx.font = "bold 9px 'JetBrains Mono', monospace";
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('VKS', nx, ny - 7);
+        ctx.fillText('NEURAL', nx, ny + 2);
+        ctx.fillText('CORE', nx, ny + 11);
+
+        return { x: nx, y: ny };
+      }
+
+      function updateParticles(t, nodePositions, centerPos) {
+        if (Math.random() < 0.04 && particles.length < 18) {
+          const i = Math.floor(Math.random() * SKILLS.length);
+          spawnParticle(nodePositions[i].x, nodePositions[i].y);
+          particles[particles.length - 1].sourceIdx = i;
+        }
+        for (let i = particles.length - 1; i >= 0; i--) {
+          const p = particles[i];
+          p.progress += p.speed;
+          if (p.progress >= 1) { particles.splice(i, 1); continue; }
+          const src = nodePositions[p.sourceIdx];
+          const x = src.x + (centerPos.x - src.x) * p.progress;
+          const y = src.y + (centerPos.y - src.y) * p.progress;
+          const alpha = Math.sin(p.progress * Math.PI) * 0.8;
+          ctx.beginPath();
+          ctx.arc(x, y, p.size, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(76, 215, 246, ${alpha})`;
+          ctx.shadowColor = '#4cd7f6';
+          ctx.shadowBlur = 6;
+          ctx.fill();
+          ctx.shadowBlur = 0;
+        }
+      }
+
+      function hitTest(mx, my, i, pos) {
+        const dx = mx - pos.x, dy = my - pos.y;
+        return Math.sqrt(dx * dx + dy * dy) <= SKILLS[i].r + 8;
+      }
+
+      function showTooltip(i, screenX, screenY) {
+        const sk = SKILLS[i];
+        tooltip.innerHTML = `<div class="tt-title">${sk.label}</div><div class="tt-sub">${sk.sub}</div><div class="tt-tags">${sk.tags}</div>`;
+        const tx = Math.min(screenX + 16, window.innerWidth - 180);
+        const ty = Math.max(screenY - 60, 10);
+        tooltip.style.left = tx + 'px';
+        tooltip.style.top = ty + 'px';
+        tooltip.style.opacity = '1';
+      }
+
+      function hideTooltip() {
+        tooltip.style.opacity = '0';
+      }
+
+      let lastT = 0;
+      function draw(ts) {
+        requestAnimationFrame(draw);
+        const t = ts * 0.001;
+        globalAngle += 0.0012;
+        ctx.clearRect(0, 0, W, H);
+        drawGrid();
+        const nPos = SKILLS.map((_, i) => getNodePos(i, t));
+        const cPos = { x: cx + (mouse.x / W - 0.5) * 8, y: cy + (mouse.y / H - 0.5) * 8 };
+        nPos.forEach((p, i) => { drawLine(cPos.x, cPos.y, p.x, p.y, i === hoveredIdx, t); });
+        nPos.forEach((p, i) => drawNode(i, p, t));
+        drawCenter(t);
+        updateParticles(t, nPos, cPos);
+        lastT = t;
+      }
+
+      canvas.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+        const nPos = SKILLS.map((_, i) => getNodePos(i, lastT));
+        let found = -1;
+        for (let i = 0; i < SKILLS.length; i++) {
+          if (hitTest(mouse.x, mouse.y, i, nPos[i])) { found = i; break; }
+        }
+        if (found !== hoveredIdx) {
+          hoveredIdx = found;
+          if (found >= 0) { showTooltip(found, e.clientX, e.clientY); canvas.style.cursor = 'pointer'; }
+          else { hideTooltip(); canvas.style.cursor = 'crosshair'; }
+        } else if (found >= 0) {
+          const tx = Math.min(e.clientX + 16, window.innerWidth - 180);
+          const ty = Math.max(e.clientY - 60, 10);
+          tooltip.style.left = tx + 'px';
+          tooltip.style.top = ty + 'px';
+        }
       });
-    });
-  })();
-</script></body></html>
+
+      canvas.addEventListener('mouseleave', () => {
+        mouse.x = -999; mouse.y = -999;
+        hoveredIdx = -1;
+        hideTooltip();
+        canvas.style.cursor = 'crosshair';
+      });
+
+      resize();
+      new ResizeObserver(resize).observe(canvas.parentElement);
+      requestAnimationFrame(draw);
+    })();
+  </script>
+</body>
+
+</html>
