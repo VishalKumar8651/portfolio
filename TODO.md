@@ -1,0 +1,17 @@
+- [ ] Rename section files (without touching/removing Portfolio/index.html)
+  - [ ] Portfolio/home/index.html -> Portfolio/home.html
+  - [ ] Portfolio/projects/index.html -> Portfolio/project.html
+  - [ ] Portfolio/about/index.html -> Portfolio/about.html
+  - [ ] Portfolio/contact/index.html -> Portfolio/contact.html
+  - [ ] Portfolio/skills/index.html -> Portfolio/skills.html
+- [ ] Update all internal references (href/src) in the renamed HTML files
+  - [ ] ../home/index.html, /home/ -> ./home.html (or /home.html where appropriate)
+  - [ ] ../projects/index.html -> ./project.html
+  - [ ] ../about/index.html -> ./about.html
+  - [ ] ../contact/index.html -> ./contact.html
+  - [ ] ../skills/index.html -> ./skills.html
+- [ ] Update top-level routing config
+  - [ ] Portfolio/vercel.json destinations/rewrites for old paths (e.g. "/home/index.html")
+  - [ ] Portfolio/index.html redirect link targets (if it points to /home/)
+- [ ] Re-run search to ensure no old strings remain
+  - [ ] /home/, home/index.html, projects/index.html, about/index.html, contact/index.html, skills/index.html
